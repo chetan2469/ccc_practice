@@ -36,8 +36,7 @@ class About extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Image.network(
-                    'https://chedo.in/wp-content/uploads/2019/04/chedo.jpg'),
+                child: null,
               ),
               Container(
                 margin: EdgeInsets.all(40),

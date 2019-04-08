@@ -51,13 +51,11 @@ class _BottomNavBar extends State<BottomNavBar> {
         children: <Widget>[
           Container(
             margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-            child: Image.network(
-                'https://samyakinfotech.com/wp-content/uploads/2017/03/CCC-Training-Course-Banner.png'),
+            child: null,
           ),
           Container(
             margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-            child: Image.network(
-                'https://chedo.in/wp-content/uploads/2019/03/free-computer-course-min-1.jpg'),
+            child: null,
           )
         ],
       )),

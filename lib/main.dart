@@ -1,111 +1,199 @@
 import 'package:flutter/material.dart';
+import 'homePage.dart';
+import 'dashboard.dart';
+import 'noteDrawer.dart';
+import 'exam.dart';
+import './manageQuestions/ManageQuestion.dart';
+import 'dataTypes/question.dart';
+import './db/DatabaseHelper.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_database/firebase_database.dart';
+import './dataTypes/question.dart';
+import 'dart:async';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:flutter/foundation.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(new MyApp());
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MyApp extends StatefulWidget {
+   List<Question> questions = new List();
+
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+  State<StatefulWidget> createState() {
+    return _Myapp();
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
+class _Myapp extends State<MyApp> {
+  final dbHelper = DatabaseHelper.instance;
+  String language;
+  SharedPreferences sp;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  void initState() {
+    super.initState();
+    createSharedPref();
+    if(widget.questions.length<100){
+      dbHelper.deleteAll();
+      _fetchData();
+    }
+
+    _fillQuestions();
+  }
+
+
+  var isLoading = false;
+
+  _fetchData() async {
+    setState(() {
+      isLoading = true;
+    });
+    final response =
+        await http.get("https://raw.githubusercontent.com/chetan2469/ccc/master/data.json");
+    if (response.statusCode == 200) {
+      widget.questions = (json.decode(response.body) as List)
+          .map((data) => new Question.fromJson(data))
+          .toList();
+      setState(() {
+        isLoading = false;
+      });
+    } else {
+      throw Exception('Failed to load photos');
+    }
+    insertListToDatabase();
+  }
+
+  void insertListToDatabase() async {
+
+    
+    for (int i = 0; i < widget.questions.length; i++) {
+
+      Map<String, dynamic> row = {
+      DatabaseHelper.columnQuestion: widget.questions[i].question,
+      DatabaseHelper.columnLanguage: widget.questions[i].language,
+      DatabaseHelper.columnOp1: widget.questions[i].op1,
+      DatabaseHelper.columnOp2: widget.questions[i].op2,
+      DatabaseHelper.columnOp3: widget.questions[i].op3,
+      DatabaseHelper.columnOp4: widget.questions[i].op4,
+      DatabaseHelper.columnAns: widget.questions[i].ans
+    };
+    final id = await dbHelper.insert(row);
+    }
+    
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  void createSharedPref() async {
+    sp = await SharedPreferences.getInstance();
+    language = sp.getString("language");
+  }
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
+  //firebase info
+  final databaseReference = FirebaseDatabase.instance.reference();
+  final recentJobsRef = FirebaseDatabase.instance.reference();
+
+  void sendToFirebase(String userName) async {
+    for (int i = 0; i < widget.questions.length; i++) {
+      databaseReference
+          .child(userName)
+          .child('questions')
+          .child(widget.questions[i].getId().toString())
+          .set({
+        'question': widget.questions[i].getQuestion(),
+        'op1': widget.questions[i].getOp1(),
+        'op2': widget.questions[i].getOp2(),
+        'op3': widget.questions[i].getOp3(),
+        'op4': widget.questions[i].getOp4(),
+        'ans': widget.questions[i].getAns(),
+        'language': widget.questions[i].getLanguage(),
+      });
+    }
+  }
+
+  void getDataFromFirebase() async {
+    databaseReference.child('chedo').child('questions').child('1');
+  }
+
+  void _insert(String question, String language, String op1, String op2,
+      String op3, String op4, String ans) async {
+    // row insert into table
+
+    Map<String, dynamic> row = {
+      DatabaseHelper.columnQuestion: question,
+      DatabaseHelper.columnLanguage: language,
+      DatabaseHelper.columnOp1: op1,
+      DatabaseHelper.columnOp2: op2,
+      DatabaseHelper.columnOp3: op3,
+      DatabaseHelper.columnOp4: op4,
+      DatabaseHelper.columnAns: ans
+    };
+    final id = await dbHelper.insert(row);
+
+    //add to products List for virtual
+
+    Question q = new Question(
+        id: id as int,
+        question: question,
+        op1: op1,
+        op2: op2,
+        op3: op3,
+        op4: op4,
+        ans: ans,
+        language: language);
+    widget.questions.add(q);
+  }
+
+  void _fillQuestions() async {
+    String ans;
+    final allRows = await dbHelper.queryAllRows();
+    widget.questions.clear();
+    allRows.forEach((row) {
+      //Product pd = new Product(row['_id'], row['name'], row['age']);
+      //widget.products.add(pd);
+
+//if unfortunetly answers appers op1 op2 op3 or op4 rather than orignal answer
+      if (row['ans'] == 'op1') {
+        ans = row['op1'];
+      } else if (row['ans'] == 'op2') {
+        ans = row['op2'];
+      } else if (row['ans'] == 'op3') {
+        ans = row['op3'];
+      } else if (row['ans'] == 'op4') {
+        ans = row['op4'];
+      } else {
+        ans = row['ans'];
+      }
+
+      Question q = new Question(
+          id: row['_id'] as int,
+          question: row['question'],
+          op1: row['op1'],
+          op2: row['op2'],
+          op3: row['op3'],
+          op4: row['op4'],
+          ans: ans,
+          language: row['language']);
+
+      widget.questions.add(q);
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Chedo On Fire",
+      routes: {
+        "/dashboard": (BuildContext context) =>
+            Dashboard(widget.questions, sendToFirebase, getDataFromFirebase),
+        "/notes": (BuildContext context) => NoteDrawer(),
+        "/exam": (BuildContext context) =>
+            Exam(widget.questions, sp.getString("language")),
+        "/manage": (BuildContext context) => ManageQuestions(widget.questions),
+      },
+      home: HomePage(sendToFirebase, getDataFromFirebase),
     );
   }
 }
+
+

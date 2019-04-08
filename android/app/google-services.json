@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "555443598127",
+    "firebase_url": "https://chedo-3b1e8.firebaseio.com",
+    "project_id": "chedo-3b1e8",
+    "storage_bucket": "chedo-3b1e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555443598127:android:f2236470dab38536",
+        "android_client_info": {
+          "package_name": "com.example.fire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE272MyP9BLuVv5RlaeJbMDtDNv4rSBn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555443598127-leubmu7ffn2b5s8v0ej6lbut7o3o6e7b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "555443598127-qjb6g1bsa1ufs9d612oblg84nbvpm56k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "chedo.in"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,11 +6,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'about.dart';
 import './setting.dart';
 
-
-
-
 class Dashboard extends StatefulWidget {
-   List<Question> questions;
+  List<Question> questions;
   final Function sendToFirebase;
   final Function getDataFromFirebase;
   Dashboard(this.questions, this.sendToFirebase, this.getDataFromFirebase);
@@ -27,7 +24,6 @@ class _Dashboard extends State<Dashboard> {
     super.initState();
     checkLanuageIsSet();
   }
-
 
   checkLanuageIsSet() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
@@ -76,7 +72,10 @@ class _Dashboard extends State<Dashboard> {
                 value: 1,
                 child: GestureDetector(
                   onTap: () {
-                   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>About()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => About()));
                   },
                   child: Text("about"),
                 ),

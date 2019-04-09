@@ -9,15 +9,13 @@ import './db/DatabaseHelper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_database/firebase_database.dart';
 import './dataTypes/question.dart';
-import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:flutter/foundation.dart';
 
 void main() => runApp(new MyApp());
 
 class MyApp extends StatefulWidget {
-   List<Question> questions = new List();
+  List<Question> questions = new List();
 
   @override
   State<StatefulWidget> createState() {
@@ -29,28 +27,54 @@ class _Myapp extends State<MyApp> {
   final dbHelper = DatabaseHelper.instance;
   String language;
   SharedPreferences sp;
+  
 
   @override
   void initState() {
     super.initState();
     createSharedPref();
-    if(widget.questions.length<100){
-      dbHelper.deleteAll();
+
+    if (widget.questions.length < 50) {
+    //  dbHelper.deleteAll();
       _fetchData();
     }
 
     _fillQuestions();
   }
 
+  connectionRequestPopup() async {
+    SharedPreferences sp = await SharedPreferences.getInstance();
+    if (sp.getString("language") == null) {
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          // return object of type Dialog
+          return AlertDialog(
+            title: Text('You have Internet Connection for first time setup !!'),
+            actions: <Widget>[
+              // usually buttons at the bottom of the dialog
+              FlatButton(
+                child: Text("ok"),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              )
+            ],
+          );
+        },
+      );
+    }
+  }
 
   var isLoading = false;
 
-  _fetchData() async {
+  void _fetchData() async {
     setState(() {
       isLoading = true;
     });
-    final response =
-        await http.get("https://raw.githubusercontent.com/chetan2469/ccc/master/data.json");
+
+    final response = await http.get(
+        "https://raw.githubusercontent.com/chetan2469/ccc/master/data.json");
     if (response.statusCode == 200) {
       widget.questions = (json.decode(response.body) as List)
           .map((data) => new Question.fromJson(data))
@@ -65,23 +89,19 @@ class _Myapp extends State<MyApp> {
   }
 
   void insertListToDatabase() async {
-
-    
     for (int i = 0; i < widget.questions.length; i++) {
-
       Map<String, dynamic> row = {
-      DatabaseHelper.columnQuestion: widget.questions[i].question,
-      DatabaseHelper.columnLanguage: widget.questions[i].language,
-      DatabaseHelper.columnOp1: widget.questions[i].op1,
-      DatabaseHelper.columnOp2: widget.questions[i].op2,
-      DatabaseHelper.columnOp3: widget.questions[i].op3,
-      DatabaseHelper.columnOp4: widget.questions[i].op4,
-      DatabaseHelper.columnAns: widget.questions[i].ans
-    };
-    final id = await dbHelper.insert(row);
+        DatabaseHelper.columnQuestion: widget.questions[i].question,
+        DatabaseHelper.columnLanguage: widget.questions[i].language,
+        DatabaseHelper.columnOp1: widget.questions[i].op1,
+        DatabaseHelper.columnOp2: widget.questions[i].op2,
+        DatabaseHelper.columnOp3: widget.questions[i].op3,
+        DatabaseHelper.columnOp4: widget.questions[i].op4,
+        DatabaseHelper.columnAns: widget.questions[i].ans
+      };
+      final id = await dbHelper.insert(row);
     }
-    
-}
+  }
 
   void createSharedPref() async {
     sp = await SharedPreferences.getInstance();
@@ -191,9 +211,7 @@ class _Myapp extends State<MyApp> {
             Exam(widget.questions, sp.getString("language")),
         "/manage": (BuildContext context) => ManageQuestions(widget.questions),
       },
-      home: HomePage(sendToFirebase, getDataFromFirebase),
+      home: HomePage(sendToFirebase, getDataFromFirebase,widget.questions),
     );
   }
 }
-
-

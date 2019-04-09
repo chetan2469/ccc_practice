@@ -12,7 +12,6 @@ class ManageQuestions extends StatefulWidget {
     return _ManageQuestions();
   }
 }
-
 class _ManageQuestions extends State<ManageQuestions> {
   @override
   Widget build(BuildContext context) {
@@ -21,6 +20,17 @@ class _ManageQuestions extends State<ManageQuestions> {
       child: Scaffold(
         appBar: AppBar(
           title: Text("Add Your Own Questions"),
+          actions: <Widget>[
+            Container(
+              margin: EdgeInsets.all(20),
+              child: GestureDetector(
+                onTap: (){
+                  Navigator.pushReplacementNamed(context, '/dashboard');
+                },
+                child: Icon(Icons.backspace),
+              ),
+            )
+          ],
           bottom: TabBar(
             tabs: <Widget>[
               Tab(
@@ -35,7 +45,10 @@ class _ManageQuestions extends State<ManageQuestions> {
           ),
         ),
         body: TabBarView(
-          children: <Widget>[AddQuestion(widget.questions), QuestionList(widget.questions)],
+          children: <Widget>[
+            AddQuestion(widget.questions),
+            QuestionList(widget.questions)
+          ],
         ),
       ),
     );

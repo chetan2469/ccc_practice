@@ -595,8 +595,7 @@
     "op3" : "F4",
     "op4" : "none of the above",
     "question" : "what is the shortcut key for search"
-  },
-  "68" : {
+  }, {
     "ans" : "ctrl+Alt+Del",
     "language" : "English",
     "op1" : "ctrl+Alt+Del",

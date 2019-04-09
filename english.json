@@ -575,5 +575,87 @@
 "op3": "K",
 "op4": "none of the above",
 "question": "what is the shortcut key for HYPERLINK"
-}
+},
+{
+"ans": "ctrl+V",
+"language": "English",
+"op1": "ctrl+V",
+"op2": "ctrl+A",
+"op3": "ctrl+B",
+"op4": "none of the above",
+"question": "what is the shortcut key for PASTE"
+},
+{
+"ans": "ctrl+B",
+"language": "English",
+"op1": "ctrl+C",
+"op2": "ctrl+B",
+"op3": "ctrl+A",
+"op4": "none of the above",
+"question": "what is the shortcut key for BOLD"
+},
+{
+"ans": "F1",
+"language": "English",
+"op1": "F1",
+"op2": "F2",
+"op3": "F4",
+"op4": "none of the above",
+"question": "what is the shortcut key for help"
+},
+{
+"ans": "none of the above",
+"language": "English",
+"op1": "F2",
+"op2": "F3",
+"op3": "F4",
+"op4": "none of the above",
+"question": "what is the shortcut key for search"
+},
+{
+"ans": "ctrl+Alt+Del",
+"language": "English",
+"op1": "ctrl+Alt+Del",
+"op2": "Alt+Del",
+"op3": "Del",
+"op4": "none of the above",
+"question": "what is the shortcut key for REBOOT"
+},
+{
+"ans": "ctrl+K",
+"language": "English",
+"op1": "ctrl+K",
+"op2": "G",
+"op3": "K",
+"op4": "none of the above",
+"question": "what is the shortcut key for HYPERLINK"
+},
+
+{
+"ans": "Synonyms and Antonyms words",
+"language": "English",
+"op1": "Spelling suggestions",
+"op2": "Grammar options",
+"op3": "Synonyms and Antonyms words",
+"op4": "All of above",
+"question": "Thesaurus tool in MS Word is used for"
+},
+{
+"ans": "Transpose",
+"language": "English",
+"op1": "Hyperlink",
+"op2": "Index",
+"op3": "Transpose",
+"op4": "Rows",
+"question": "What function displays row data in a column or column data in a row?"
+},
+{
+"ans": "Bar charts, line graphs and pie charts",
+"language": "English",
+"op1": "Line graphs and pie charts only",
+"op2": "Bar charts, line graphs and pie charts",
+"op3": "the Only line graphs",
+"op4": "Line graphs and pie charts only",
+"question": "Which types of charts can excel produce?"
+}  
 ]

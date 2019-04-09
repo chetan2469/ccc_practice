@@ -5,13 +5,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 import './staticData/Data.dart';
 import 'dataTypes/question.dart';
 import 'package:connectivity/connectivity.dart';
+import 'db/DatabaseHelper.dart';
 import 'dart:async';
 
 class HomePage extends StatefulWidget {
   final Function sendToFirebase;
   final Function getDataFromFirebase;
+  final Function fetchData;
   final List<Question> questions;
-  HomePage(this.sendToFirebase, this.getDataFromFirebase, this.questions);
+  HomePage(this.sendToFirebase, this.getDataFromFirebase, this.questions,this.fetchData);
 
   @override
   State<StatefulWidget> createState() {
@@ -40,11 +42,18 @@ class _HomePage extends State<HomePage> {
         print(
             "Connected to Mobile Network !!-------------------------------------------");
         d.setUName("chedo");
+        final dbHelper = DatabaseHelper.instance;
+      dbHelper.deleteAll();
+        widget.fetchData();
+        print("MAkeing NULL DATABASE");
         Navigator.pushReplacementNamed(context, '/dashboard');
       } else if (result == ConnectivityResult.wifi) {
         print(
             "Connected to wifi Network !!-------------------------------------------");
         d.setUName("chedo");
+        final dbHelper = DatabaseHelper.instance;
+      dbHelper.deleteAll();
+      print("MAkeing NULL DATABASE");
         Navigator.pushReplacementNamed(context, '/dashboard');
       } else {
         print("Not Connected !!-------------------------------------------");

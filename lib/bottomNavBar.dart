@@ -48,18 +48,7 @@ class _BottomNavBar extends State<BottomNavBar> {
     return Scaffold(
       body: Center(
           child: ListView(
-        children: <Widget>[
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-            child: Image.network(
-                'https://samyakinfotech.com/wp-content/uploads/2017/03/CCC-Training-Course-Banner.png'),
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-            child: Image.network(
-                'https://chedo.in/wp-content/uploads/2019/03/free-computer-course-min-1.jpg'),
-          )
-        ],
+        children: <Widget>[],
       )),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[

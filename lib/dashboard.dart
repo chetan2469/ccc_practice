@@ -10,7 +10,8 @@ class Dashboard extends StatefulWidget {
   List<Question> questions;
   final Function sendToFirebase;
   final Function getDataFromFirebase;
-  Dashboard(this.questions, this.sendToFirebase, this.getDataFromFirebase);
+  final Function fetchData;
+  Dashboard(this.questions, this.sendToFirebase, this.getDataFromFirebase,this.fetchData);
 
   @override
   State<StatefulWidget> createState() {
@@ -89,7 +90,7 @@ class _Dashboard extends State<Dashboard> {
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) =>
-                                Setting(widget.sendToFirebase)));
+                                Setting(widget.sendToFirebase,widget.fetchData)));
                   },
                   child: Text("Setting"),
                 ),

@@ -4,7 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class Setting extends StatefulWidget {
   final Function sendToFirebase;
-  Setting(this.sendToFirebase);
+  final Function fetchData;
+  Setting(this.sendToFirebase, this.fetchData);
 
   @override
   State<StatefulWidget> createState() {
@@ -87,6 +88,8 @@ class _Setting extends State<Setting> {
             onTap: () async {
               SharedPreferences sp = await SharedPreferences.getInstance();
               widget.sendToFirebase(sp.getString('uname'));
+
+              showInSnackBar("thanks for Community...");
             },
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
@@ -101,6 +104,29 @@ class _Setting extends State<Setting> {
                     width: 115,
                   ),
                   Icon(Icons.backup)
+                ],
+              ),
+            ),
+          ),
+           GestureDetector(
+            onTap: () async {
+              SharedPreferences sp = await SharedPreferences.getInstance();
+              widget.fetchData();
+              showInSnackBar("data is fetching from server...");
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
+              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    "Update Questions",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  SizedBox(
+                    width: 115,
+                  ),
+                  Icon(Icons.update)
                 ],
               ),
             ),
@@ -140,5 +166,11 @@ class _Setting extends State<Setting> {
         ],
       ),
     );
+  }
+
+  void showInSnackBar(String value) {
+    Scaffold.of(context).showSnackBar(new SnackBar(
+        content: new Text(value)
+    ));
   }
 }

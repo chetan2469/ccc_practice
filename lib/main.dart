@@ -27,19 +27,12 @@ class _Myapp extends State<MyApp> {
   final dbHelper = DatabaseHelper.instance;
   String language;
   SharedPreferences sp;
-  
 
   @override
   void initState() {
     super.initState();
     createSharedPref();
-
-    if (widget.questions.length < 50) {
-    //  dbHelper.deleteAll();
-      _fetchData();
-    }
-
-    _fillQuestions();
+    fillQuestions(); //fill question from database to list
   }
 
   connectionRequestPopup() async {
@@ -68,13 +61,31 @@ class _Myapp extends State<MyApp> {
 
   var isLoading = false;
 
-  void _fetchData() async {
+  void fetchData() async {
+    String link =
+        "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/english.json";
+
     setState(() {
       isLoading = true;
     });
 
-    final response = await http.get(
-        "https://raw.githubusercontent.com/chetan2469/ccc/master/data.json");
+    SharedPreferences sp = await SharedPreferences.getInstance();
+    if (sp.getString("language") == "English") {
+      link =
+          "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/english.json";
+    }
+
+    if (sp.getString("language") == "Marathi") {
+      link =
+          "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/marathi.json";
+    }
+
+    if (sp.getString("language") == "Hindi") {
+      link =
+          "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/hindi.json";
+    }
+
+    final response = await http.get(link);
     if (response.statusCode == 200) {
       widget.questions = (json.decode(response.body) as List)
           .map((data) => new Question.fromJson(data))
@@ -89,6 +100,7 @@ class _Myapp extends State<MyApp> {
   }
 
   void insertListToDatabase() async {
+    print("Feeling Database");
     for (int i = 0; i < widget.questions.length; i++) {
       Map<String, dynamic> row = {
         DatabaseHelper.columnQuestion: widget.questions[i].question,
@@ -101,6 +113,7 @@ class _Myapp extends State<MyApp> {
       };
       final id = await dbHelper.insert(row);
     }
+    fillQuestions();
   }
 
   void createSharedPref() async {
@@ -163,7 +176,7 @@ class _Myapp extends State<MyApp> {
     widget.questions.add(q);
   }
 
-  void _fillQuestions() async {
+  void fillQuestions() async {
     String ans;
     final allRows = await dbHelper.queryAllRows();
     widget.questions.clear();
@@ -204,14 +217,15 @@ class _Myapp extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: "Chedo On Fire",
       routes: {
-        "/dashboard": (BuildContext context) =>
-            Dashboard(widget.questions, sendToFirebase, getDataFromFirebase),
+        "/dashboard": (BuildContext context) => Dashboard(
+            widget.questions, sendToFirebase, getDataFromFirebase, fetchData),
         "/notes": (BuildContext context) => NoteDrawer(),
         "/exam": (BuildContext context) =>
             Exam(widget.questions, sp.getString("language")),
         "/manage": (BuildContext context) => ManageQuestions(widget.questions),
       },
-      home: HomePage(sendToFirebase, getDataFromFirebase,widget.questions),
+      home: HomePage(
+          sendToFirebase, getDataFromFirebase, widget.questions, fetchData),
     );
   }
 }

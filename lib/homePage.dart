@@ -3,11 +3,15 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './staticData/Data.dart';
+import 'dataTypes/question.dart';
+import 'package:connectivity/connectivity.dart';
+import 'dart:async';
 
 class HomePage extends StatefulWidget {
   final Function sendToFirebase;
   final Function getDataFromFirebase;
-  HomePage(this.sendToFirebase, this.getDataFromFirebase);
+  final List<Question> questions;
+  HomePage(this.sendToFirebase, this.getDataFromFirebase, this.questions);
 
   @override
   State<StatefulWidget> createState() {
@@ -20,18 +24,67 @@ class _HomePage extends State<HomePage> {
   bool googleButtonVisiblity = true;
   Data d = new Data();
 
+  final Connectivity connectivity = new Connectivity();
+  StreamSubscription<ConnectivityResult> subscription;
+
   void initState() {
     super.initState();
-  
     registeredUser();
+  }
+
+  void checkInternetCon() {
+    subscription = Connectivity()
+        .onConnectivityChanged
+        .listen((ConnectivityResult result) {
+      if (result == ConnectivityResult.mobile) {
+        print(
+            "Connected to Mobile Network !!-------------------------------------------");
+        d.setUName("chedo");
+        Navigator.pushReplacementNamed(context, '/dashboard');
+      } else if (result == ConnectivityResult.wifi) {
+        print(
+            "Connected to wifi Network !!-------------------------------------------");
+        d.setUName("chedo");
+        Navigator.pushReplacementNamed(context, '/dashboard');
+      } else {
+        print("Not Connected !!-------------------------------------------");
+        connectionRequestPopup();
+      }
+    });
+  }
+
+  connectionRequestPopup() async {
+    SharedPreferences sp = await SharedPreferences.getInstance();
+    if (sp.getString("language") == null) {
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          // return object of type Dialog
+          return AlertDialog(
+            title: Text('You have Internet Connection for first time setup !!'),
+            actions: <Widget>[
+              // usually buttons at the bottom of the dialog
+              FlatButton(
+                child: Text("ok"),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              )
+            ],
+          );
+        },
+      );
+    }
   }
 
   void registeredUser() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
-
+    
     if (sp.getString('uname') != null) {
       Navigator.pushReplacementNamed(context, '/dashboard');
-    } 
+    } else {
+      checkInternetCon();
+    }
   }
 
   String displayMessage = 'Login with';
@@ -98,7 +151,6 @@ class _HomePage extends State<HomePage> {
                 color: Color(0xFFEF5350),
                 onPressed: () {
                   signInWithGoogle();
-                  
                 },
                 child: Text(
                   "Google",
@@ -122,8 +174,7 @@ class _HomePage extends State<HomePage> {
               child: RaisedButton(
                 color: Color(0xFF536DF0),
                 onPressed: () {
-                  d.setUName("chedo");
-                  Navigator.pushReplacementNamed(context, '/dashboard');
+                  registeredUser();
                 },
                 child: Text(
                   "Guest",

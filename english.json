@@ -656,5 +656,50 @@
 "op3": "NPV",
 "op4": "PMT",
 "question": "Which of the following is not a financial function?"
+},
+ {
+"ans": "ABS()",
+"language": "English",
+"op1": "CHAR()",
+"op2": "LEN()",
+"op3": "VAR()",
+"op4": "ABS()",
+"question": "Which of the following is not a text function?"
+},
+{
+"ans": "edu domain",
+"language": "English",
+"op1": "mail domain",
+"op2": "in domain",
+"op3": "edu domain",
+"op4": "com domain",
+"question": "Computers on the internet owned and operated by education institution form part of the …"
+},
+{
+"ans": "First Web page ",
+"language": "English",
+"op1": "User Web page ",
+"op2": "First Web page ",
+"op3": "Begining  Web page ",
+"op4": "Home Page",
+"question": "All web addresses start ….."
+},
+{
+"ans": "Home Page",
+"language": "English",
+"op1": "User Web page ",
+"op2": "First Web page ",
+"op3": "Begining  Web page ",
+"op4": "Home Page",
+"question": "When you start a web browser the first web page that gets loaded in the browser is called …"
+},
+{
+"ans": "both (1) and (2)",
+"language": "English",
+"op1": "E-mail, Telnet, Usenet ",
+"op2": "Sound and movie files ",
+"op3": "both (1) and (2) ",
+"op4": "All internet communication tools ",
+"question": "The world wide web integrates which of the following?"
 }
 ]

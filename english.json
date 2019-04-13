@@ -701,5 +701,151 @@
 "op3": "both (1) and (2) ",
 "op4": "All internet communication tools ",
 "question": "The world wide web integrates which of the following?"
+},
+ {
+"ans": "TRUE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "Using home tab you can perform editing functions such as cut, copy, paste, find  and replace etc. …"
+},
+{
+"ans": "TRUE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "Using insert menu you can insert various object such as page numbers, headers and footers, picture etc…"
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "using review tab you can aces to various utilities of word such as spess check, macros and mail merge etc. …"
+},
+{
+"ans": "TRUE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "In MS word every command is available is ribbon. ……. MS"
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "Formula bar is available in MS Word 2010…."
+},
+
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "To create a new worksheet, select worksheet from the file menu……"
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "Cells are named by their positions either by rows or coloumns…."
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "if the bold and underline buttons are appearing lighter than before, it means that they are currently in use …"
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "Standard width of a column is 18.43……"
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "To open a file quickly from the open dialog box, double click the file’s icon. "
+},
+{
+"ans": "TRUE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "To specify multiple recipients of carbon copy of same mail message, Cc: field is used…"
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "In SMTP, the message can be of any length…… SMTP"
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "A protocol used for fetching e-mail from a mailbox is PQPI…"
+},
+{
+"ans": "FALSE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "All incoming email messages are to be stored in the outbox folder"
+},
+{
+"ans": "TRUE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "he email component of internet explorer is called  “outlook Express”"
+},
+
+{
+"ans": "TRUE",
+"language": "English",
+"op1": "TRUE",
+"op2": "FALSE",
+"op3": "-",
+"op4": "-",
+"question": "The input device to be used to get a printed diagram into a computer is the …"
 }
 ]

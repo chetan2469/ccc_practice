@@ -42,9 +42,9 @@ class About extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(40),
                 child: Text(
-                  "We Provide Software development Service & C, C++, data structure, Python, Java, Mobile App Development Web Design, Video Editing, AutoCAD Computer Courses . to get more info or any query dont be shy to contact with us",
+                  "chedo",
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15, color: Colors.grey),
+                  style: TextStyle(fontSize: 35, color: Colors.grey),
                 ),
               ),
               Container(

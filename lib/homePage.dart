@@ -13,7 +13,8 @@ class HomePage extends StatefulWidget {
   final Function getDataFromFirebase;
   final Function fetchData;
   final List<Question> questions;
-  HomePage(this.sendToFirebase, this.getDataFromFirebase, this.questions,this.fetchData);
+  HomePage(this.sendToFirebase, this.getDataFromFirebase, this.questions,
+      this.fetchData);
 
   @override
   State<StatefulWidget> createState() {
@@ -43,17 +44,17 @@ class _HomePage extends State<HomePage> {
             "Connected to Mobile Network !!-------------------------------------------");
         d.setUName("chedo");
         final dbHelper = DatabaseHelper.instance;
-      dbHelper.deleteAll();
+        dbHelper.deleteAll();
         widget.fetchData();
-        print("MAkeing NULL DATABASE");
+        print("Makeing NULL DATABASE");
         Navigator.pushReplacementNamed(context, '/dashboard');
       } else if (result == ConnectivityResult.wifi) {
         print(
             "Connected to wifi Network !!-------------------------------------------");
         d.setUName("chedo");
         final dbHelper = DatabaseHelper.instance;
-      dbHelper.deleteAll();
-      print("MAkeing NULL DATABASE");
+        dbHelper.deleteAll();
+        print("MAkeing NULL DATABASE");
         Navigator.pushReplacementNamed(context, '/dashboard');
       } else {
         print("Not Connected !!-------------------------------------------");
@@ -88,8 +89,8 @@ class _HomePage extends State<HomePage> {
 
   void registeredUser() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
-    
-    if (sp.getString('uname') != null) {
+
+    if (sp.getString('uname') != null && widget.questions.length > 90) {
       Navigator.pushReplacementNamed(context, '/dashboard');
     } else {
       checkInternetCon();
@@ -131,74 +132,98 @@ class _HomePage extends State<HomePage> {
     }
   }
 
+  Future<bool> _onWillPop() {
+    return showDialog(
+          context: context,
+          builder: (context) => new AlertDialog(
+                title: new Text('Are you sure?'),
+                content: new Text('Do you want to exit an App'),
+                actions: <Widget>[
+                  new FlatButton(
+                    onPressed: () => Navigator.of(context).pop(false),
+                    child: new Text('No'),
+                  ),
+                  new FlatButton(
+                    onPressed: () => Navigator.of(context).pop(true),
+                    child: new Text('Yes'),
+                  ),
+                ],
+              ),
+        ) ??
+        false;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Image.network(
-                'https://samyakinfotech.com/wp-content/uploads/2017/03/CCC-Training-Course-Banner.png'),
-            Container(
-              width: 180,
-              height: 60,
-              decoration: BoxDecoration(
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                    color: Colors.grey,
-                    offset: Offset(
-                      1.0,
-                      1.0,
+    return WillPopScope(
+      onWillPop: _onWillPop,
+      child: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image.network(
+                  'https://samyakinfotech.com/wp-content/uploads/2017/03/CCC-Training-Course-Banner.png'),
+              Container(
+                width: 180,
+                height: 60,
+                decoration: BoxDecoration(
+                  boxShadow: <BoxShadow>[
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(
+                        1.0,
+                        1.0,
+                      ),
+                      blurRadius: 5.0,
                     ),
-                    blurRadius: 5.0,
+                  ],
+                ),
+                margin: EdgeInsets.all(10),
+                child: RaisedButton(
+                  color: Color(0xFFEF5350),
+                  onPressed: () {
+                    signInWithGoogle();
+                  },
+                  child: Text(
+                    "Google",
+                    style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
                   ),
-                ],
-              ),
-              margin: EdgeInsets.all(10),
-              child: RaisedButton(
-                color: Color(0xFFEF5350),
-                onPressed: () {
-                  signInWithGoogle();
-                },
-                child: Text(
-                  "Google",
-                  style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
                 ),
               ),
-            ),
-            Container(
-              width: 180,
-              height: 60,
-              decoration: BoxDecoration(
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                    color: Colors.grey,
-                    offset: Offset(0.0, 1.0),
-                    blurRadius: 5.0,
+              Container(
+                width: 180,
+                height: 60,
+                decoration: BoxDecoration(
+                  boxShadow: <BoxShadow>[
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(0.0, 1.0),
+                      blurRadius: 5.0,
+                    ),
+                  ],
+                ),
+                margin: EdgeInsets.all(10),
+                child: RaisedButton(
+                  color: Color(0xFF536DF0),
+                  onPressed: () {
+                    registeredUser();
+                  },
+                  child: Text(
+                    "Guest",
+                    style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
                   ),
-                ],
-              ),
-              margin: EdgeInsets.all(10),
-              child: RaisedButton(
-                color: Color(0xFF536DF0),
-                onPressed: () {
-                  registeredUser();
-                },
-                child: Text(
-                  "Guest",
-                  style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
                 ),
               ),
-            ),
-            Container(
-              margin: EdgeInsets.all(20),
-              child: Text(
-                "Sign in for continue...",
-                style: TextStyle(fontSize: 20),
+              Container(
+                margin: EdgeInsets.all(20),
+                child: Text(
+                  "Sign in for continue...",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -43,22 +43,48 @@ class _BottomNavBar extends State<BottomNavBar> {
     });
   }
 
+  Future<bool> _onWillPop() {
+    return showDialog(
+          context: context,
+          builder: (context) => new AlertDialog(
+                title: new Text('Are you sure?'),
+                content: new Text('Do you want to exit an App'),
+                actions: <Widget>[
+                  new FlatButton(
+                    onPressed: () => Navigator.of(context).pop(false),
+                    child: new Text('No'),
+                  ),
+                  new FlatButton(
+                    onPressed: () => Navigator.of(context).pop(true),
+                    child: new Text('Yes'),
+                  ),
+                ],
+              ),
+        ) ??
+        false;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-          child: ListView(
-        children: <Widget>[],
-      )),
-      bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.note), title: Text('Home')),
-          BottomNavigationBarItem(icon: Icon(Icons.book), title: Text('Exam')),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.question_answer), title: Text('Manage')),
-        ],
-        fixedColor: Colors.blueAccent,
-        onTap: _onItemTapped,
+    return WillPopScope(
+      onWillPop: _onWillPop,
+      child: Scaffold(
+        body: Center(
+            child: ListView(
+          children: <Widget>[],
+        )),
+        bottomNavigationBar: BottomNavigationBar(
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+                icon: Icon(Icons.note), title: Text('Home')),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.book), title: Text('Exam')),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.question_answer), title: Text('Manage')),
+          ],
+          fixedColor: Colors.blueAccent,
+          onTap: _onItemTapped,
+        ),
       ),
     );
   }

@@ -26,6 +26,7 @@ class _Setting extends State<Setting> {
                     setState(() {
                       d.setLanguage("English");
                     });
+                     widget.fetchData();
                   },
                   child: Text("English"),
                 ),
@@ -37,8 +38,9 @@ class _Setting extends State<Setting> {
                     print("Hindi");
                     Navigator.pop(context);
                     setState(() {
-                      d.setLanguage("Marathi");
+                   //   d.setLanguage("Hindi");
                     });
+                     widget.fetchData();
                   },
                   child: Text("Hindi"),
                 ),
@@ -49,10 +51,10 @@ class _Setting extends State<Setting> {
                   onTap: () {
                     print("Marathi");
                     Navigator.pop(context);
-                    Navigator.pop(context);
                     setState(() {
-                      d.setLanguage("Marathi");
+                    //  d.setLanguage("Marathi");
                     });
+                     widget.fetchData();
                   },
                   child: Text("Marathi"),
                 ),
@@ -78,7 +80,7 @@ class _Setting extends State<Setting> {
                   style: TextStyle(fontSize: 20),
                 ),
                 SizedBox(
-                  width: 100,
+                  width: 95,
                 ),
                 _languagePopup()
               ],
@@ -124,27 +126,34 @@ class _Setting extends State<Setting> {
                     style: TextStyle(fontSize: 20),
                   ),
                   SizedBox(
-                    width: 115,
+                    width: 105,
                   ),
                   Icon(Icons.update)
                 ],
               ),
             ),
           ),
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
-            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-            child: Row(
-              children: <Widget>[
-                Text(
-                  "Restore questions",
-                  style: TextStyle(fontSize: 20),
-                ),
-                SizedBox(
-                  width: 105,
-                ),
-                Icon(Icons.restore)
-              ],
+          GestureDetector(
+            onTap: () async {
+              SharedPreferences sp = await SharedPreferences.getInstance();
+              widget.fetchData();
+              showInSnackBar("data is fetching from server...");
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
+              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    "Restore Questions",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  SizedBox(
+                    width: 100,
+                  ),
+                  Icon(Icons.restore)
+                ],
+              ),
             ),
           ),
           Container(

@@ -11,7 +11,8 @@ class Dashboard extends StatefulWidget {
   final Function sendToFirebase;
   final Function getDataFromFirebase;
   final Function fetchData;
-  Dashboard(this.questions, this.sendToFirebase, this.getDataFromFirebase,this.fetchData);
+  Dashboard(this.questions, this.sendToFirebase, this.getDataFromFirebase,
+      this.fetchData);
 
   @override
   State<StatefulWidget> createState() {
@@ -24,6 +25,27 @@ class _Dashboard extends State<Dashboard> {
   initState() {
     super.initState();
     checkLanuageIsSet();
+  }
+
+  Future<bool> _onWillPop() {
+    return showDialog(
+          context: context,
+          builder: (context) => new AlertDialog(
+                title: new Text('Are you sure?'),
+                content: new Text('Do you want to exit an App'),
+                actions: <Widget>[
+                  new FlatButton(
+                    onPressed: () => Navigator.of(context).pop(false),
+                    child: new Text('No'),
+                  ),
+                  new FlatButton(
+                    onPressed: () => Navigator.of(context).pop(true),
+                    child: new Text('Yes'),
+                  ),
+                ],
+              ),
+        ) ??
+        false;
   }
 
   checkLanuageIsSet() async {
@@ -42,6 +64,7 @@ class _Dashboard extends State<Dashboard> {
                 onPressed: () {
                   sp.setString('language', "English");
                   Navigator.pop(context);
+                  widget.fetchData();
                 },
               ),
               FlatButton(
@@ -49,6 +72,7 @@ class _Dashboard extends State<Dashboard> {
                 onPressed: () {
                   //  sp.setString('language', "Hindi");
                   Navigator.pop(context);
+                  widget.fetchData();
                 },
               ),
               FlatButton(
@@ -56,6 +80,7 @@ class _Dashboard extends State<Dashboard> {
                 onPressed: () {
                   sp.setString('language', "Marathi");
                   Navigator.pop(context);
+                  widget.fetchData();
                 },
               )
             ],
@@ -78,7 +103,7 @@ class _Dashboard extends State<Dashboard> {
                         MaterialPageRoute(
                             builder: (BuildContext context) => About()));
                   },
-                  child: Text("about"),
+                  child: Text("About"),
                 ),
               ),
               PopupMenuItem(
@@ -89,8 +114,8 @@ class _Dashboard extends State<Dashboard> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                Setting(widget.sendToFirebase,widget.fetchData)));
+                            builder: (BuildContext context) => Setting(
+                                widget.sendToFirebase, widget.fetchData)));
                   },
                   child: Text("Setting"),
                 ),
@@ -100,13 +125,16 @@ class _Dashboard extends State<Dashboard> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text("CCC Exam Practice"),
-          actions: <Widget>[
-            _simplePopup(),
-          ],
-        ),
-        body: BottomNavBar(widget.questions));
+    return WillPopScope(
+      onWillPop: _onWillPop,
+      child: Scaffold(
+          appBar: AppBar(
+            title: Text("CCC Exam Practice"),
+            actions: <Widget>[
+              _simplePopup(),
+            ],
+          ),
+          body: BottomNavBar(widget.questions)),
+    );
   }
 }

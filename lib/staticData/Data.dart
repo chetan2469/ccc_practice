@@ -4,7 +4,7 @@ class Data {
   SharedPreferences spref;
 
   Future<bool> setUName(String uname) async {
-    spref = await SharedPreferences.getInstance();
+     spref = await SharedPreferences.getInstance();
     return spref.setString('uname', uname);
   }
 

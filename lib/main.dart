@@ -35,6 +35,8 @@ class _Myapp extends State<MyApp> {
     fillQuestions(); //fill question from database to list
   }
 
+  
+
   connectionRequestPopup() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
     if (sp.getString("language") == null) {
@@ -69,7 +71,13 @@ class _Myapp extends State<MyApp> {
       isLoading = true;
     });
 
+    final dbHelper = DatabaseHelper.instance;
+    dbHelper.deleteAll();
+
     SharedPreferences sp = await SharedPreferences.getInstance();
+
+    print(sp.getString("language")+"___________________________");
+
     if (sp.getString("language") == "English") {
       link =
           "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/english.json";
@@ -94,7 +102,7 @@ class _Myapp extends State<MyApp> {
         isLoading = false;
       });
     } else {
-      throw Exception('Failed to load photos');
+      throw Exception('Failed to load ');
     }
     insertListToDatabase();
   }
@@ -209,6 +217,10 @@ class _Myapp extends State<MyApp> {
 
       widget.questions.add(q);
     });
+
+    if(widget.questions.length<90){
+      fetchData();
+    }
   }
 
   @override

@@ -47,40 +47,42 @@ class _FullResult extends State<FullResult> {
     }
 
     return Card(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Row(
-            children: <Widget>[
-              Text("${index + 1}", style: TextStyle(fontSize: 20)),
-              SizedBox(
-                width: 20,
-              ),
-              Text(
-                " ${quest}",
-                style: TextStyle(fontSize: 20),
-              )
-            ],
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          Row(
-            children: <Widget>[
-              Icon(Icons.done),
-              Text(
-                uans,
-                style:
-                    TextStyle(color: ans == uans ? Colors.green : Colors.red),
-              ),
-              SizedBox(width: 10,),
-              Text(
-                "(${ans})",
-                style: TextStyle(color: Colors.green),
-              ),
-            ],
-          )
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Text("${index + 1}", style: TextStyle(fontSize: 20)),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  " ${quest}",
+                  style: TextStyle(fontSize: 20),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Wrap(
+              children: <Widget>[
+                Text(
+                  uans,
+                  style:
+                      TextStyle(color: ans == uans ? Colors.green : Colors.red),
+                ),
+                SizedBox(width: 10,),
+                Text(
+                  "(${ans})",
+                  style: TextStyle(color: Colors.green),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

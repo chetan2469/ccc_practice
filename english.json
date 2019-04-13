@@ -584,5 +584,77 @@
 "op3": "Java",
 "op4": "android",
 "question": "this is not programming language"
+},
+ {
+"ans": "2",
+"language": "English",
+"op1": "1",
+"op2": "2",
+"op3": "3",
+"op4": "4",
+"question": "how many scroll bars can be visible on the text area if your document is over 200% …../"
+},
+{
+"ans": "insert",
+"language": "English",
+"op1": "view",
+"op2": "refrence",
+"op3": "insert",
+"op4": "page layout",
+"question": "what ribbon will you find where you can add a chart? "
+},
+{
+"ans": "page Layout",
+"language": "English",
+"op1": "view",
+"op2": "refrence",
+"op3": "insert",
+"op4": "page layout",
+"question": "What ribbon do you use to change margins? "
+},
+{
+"ans": "Number of pages in the document, word count,",
+"language": "English",
+"op1": "Number of pages in the document, word count,",
+"op2": "size of margins, word count, web layout",
+"op3": "Number of spellings errors, page number, document name",
+"op4": "name of document, insert button, spell check",
+"question": "What Can be Shown on the status bar?……"
+},
+{
+"ans": "Both (1) and (2)",
+"language": "English",
+"op1": "Is placed just below the standard toolbar",
+"op2": "Is used to apply common formats to the worksheet test selection, like making it bold, italics, underlined or changing the font style and size",
+"op3": "Both (1) and (2) ",
+"op4": "None of the above",
+"question": "The formatting toolbar/"
+},
+{
+"ans": "B$2:B$9",
+"language": "English",
+"op1": "B2:B9",
+"op2": "$B$2:%B$9",
+"op3": "B$2:B$9",
+"op4": "None of the above",
+"question": "To change the cell reference B2: B9 to an absolute row and column reference, you word enter it is as ….. "
+},
+{
+"ans": "All below",
+"language": "English",
+"op1": "All below",
+"op2": "Can be built using function wizard ",
+"op3": "Is a shortcut formula ",
+"op4": "Is a readymade formula ",
+"question": "A function in Excel ….. "
+},
+{
+"ans": "SUM",
+"language": "English",
+"op1": "FV",
+"op2": "SUM",
+"op3": "NPV",
+"op4": "PMT",
+"question": "Which of the following is not a financial function?"
 }
 ]

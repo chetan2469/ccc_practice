@@ -865,5 +865,41 @@
 "op3": "Hardware",
 "op4": "Storage",
 "question": "any component of the computer you can see and touch is called"
+},
+ {
+"ans": "Tools",
+"language": "English",
+"op1": "All below",
+"op2": "Edit",
+"op3": "Window",
+"op4": "Tools",
+"question": " In which menu spelling command appears"
+},
+{
+"ans": "show a context-sensitive menu ",
+"language": "English",
+"op1": "open the Display Properties dialog box ",
+"op2": "show a context-sensitive menu ",
+"op3": "open the Control Panel ",
+"op4": "minimize all open applications",
+"question": "A right click on the Windows desktop itself will _____. "
+},
+{
+"ans": "Right-aligned",
+"language": "English",
+"op1": "Justified",
+"op2": "Right-aligned",
+"op3": "Center-aligned ",
+"op4": "Left-aligned ",
+"question": "When numbers are typed inside a cell, the default alignment is:"
+},
+{
+"ans": "absolute cell reference ",
+"language": "English",
+"op1": "relative cell reference ",
+"op2": "absolute cell reference ",
+"op3": "mixed cell reference ",
+"op4": "All of the above",
+"question": "Cell address A$4 in a formula means it is a"
 }
 ]

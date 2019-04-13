@@ -847,5 +847,23 @@
 "op3": "-",
 "op4": "-",
 "question": "The input device to be used to get a printed diagram into a computer is the …"
+},
+ {
+"ans": "input device",
+"language": "English",
+"op1": "output device",
+"op2": "input device",
+"op3": "game pad",
+"op4": "scanner",
+"question": "What type of device is a computer mouse?"
+},
+{
+"ans": "Hardware",
+"language": "English",
+"op1": "Software",
+"op2": "Peripheral",
+"op3": "Hardware",
+"op4": "Storage",
+"question": "any component of the computer you can see and touch is called"
 }
 ]

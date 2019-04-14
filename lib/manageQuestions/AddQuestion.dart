@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../dataTypes/question.dart';
 import '../db/DatabaseHelper.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'dart:math';
 
 class AddQuestion extends StatefulWidget {
   final List<Question> questions;
@@ -264,6 +266,9 @@ class _AddQuestion extends State<AddQuestion> {
     );
   }
 
+  final databaseReference = FirebaseDatabase.instance.reference();
+  final recentJobsRef = FirebaseDatabase.instance.reference();
+
   void _insert() async {
     // row insert into table
     Map<String, dynamic> row = {
@@ -290,6 +295,24 @@ class _AddQuestion extends State<AddQuestion> {
         language:_selectedLanguage);
     widget.questions.add(q);
     Scaffold.of(context).showSnackBar(snackBarSuccess);
+
+    //update to firebase
+
+    Random r = new Random();
+
+    databaseReference
+          .child('chedo')
+          .child('questions')
+          .child(r.nextInt(30000).toString())
+          .set({
+        'question': questionController.text,
+        'op1': op1Controller.text,
+        'op2': op2Controller.text,
+        'op3': op3Controller.text,
+        'op4': op4Controller.text,
+        'ans': ans,
+        'language': _selectedLanguage,
+      });
 
     _clear();
   }

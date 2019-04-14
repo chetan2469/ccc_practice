@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'staticData/Data.dart';
+import './db/DatabaseHelper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Setting extends StatefulWidget {
   final Function sendToFirebase;
   final Function fetchData;
-  Setting(this.sendToFirebase, this.fetchData);
+  final Function clearQuestionList;
+  Setting(this.sendToFirebase, this.fetchData,this.clearQuestionList);
 
   @override
   State<StatefulWidget> createState() {
@@ -122,7 +124,7 @@ class _Setting extends State<Setting> {
               child: Row(
                 children: <Widget>[
                   Text(
-                    "Update Questions",
+                    "Restore Questions",
                     style: TextStyle(fontSize: 20),
                   ),
                   SizedBox(
@@ -136,7 +138,9 @@ class _Setting extends State<Setting> {
           GestureDetector(
             onTap: () async {
               SharedPreferences sp = await SharedPreferences.getInstance();
-              widget.fetchData();
+             final dbHelper = DatabaseHelper.instance;
+            dbHelper.deleteAll();
+            widget.clearQuestionList();
               showInSnackBar("data is fetching from server...");
             },
             child: Container(
@@ -145,11 +149,11 @@ class _Setting extends State<Setting> {
               child: Row(
                 children: <Widget>[
                   Text(
-                    "Restore Questions",
+                    "Clear Questions",
                     style: TextStyle(fontSize: 20),
                   ),
                   SizedBox(
-                    width: 100,
+                    width: 124,
                   ),
                   Icon(Icons.restore)
                 ],

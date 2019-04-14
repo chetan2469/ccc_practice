@@ -7,12 +7,13 @@ import 'about.dart';
 import './setting.dart';
 
 class Dashboard extends StatefulWidget {
-  List<Question> questions;
+  final List<Question> questions;
   final Function sendToFirebase;
   final Function getDataFromFirebase;
   final Function fetchData;
+  final Function clearQuestionList;
   Dashboard(this.questions, this.sendToFirebase, this.getDataFromFirebase,
-      this.fetchData);
+      this.fetchData,this.clearQuestionList);
 
   @override
   State<StatefulWidget> createState() {
@@ -115,7 +116,7 @@ class _Dashboard extends State<Dashboard> {
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) => Setting(
-                                widget.sendToFirebase, widget.fetchData)));
+                                widget.sendToFirebase, widget.fetchData,widget.clearQuestionList)));
                   },
                   child: Text("Setting"),
                 ),

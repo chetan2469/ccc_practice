@@ -35,7 +35,10 @@ class _Myapp extends State<MyApp> {
     fillQuestions(); //fill question from database to list
   }
 
-  
+  void clearQuestionList(){
+    widget.questions.clear();
+  }
+
 
   connectionRequestPopup() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
@@ -230,7 +233,7 @@ class _Myapp extends State<MyApp> {
       title: "Chedo On Fire",
       routes: {
         "/dashboard": (BuildContext context) => Dashboard(
-            widget.questions, sendToFirebase, getDataFromFirebase, fetchData),
+            widget.questions, sendToFirebase, getDataFromFirebase, fetchData,clearQuestionList),
         "/notes": (BuildContext context) => NoteDrawer(),
         "/exam": (BuildContext context) =>
             Exam(widget.questions, sp.getString("language")),

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import './dataTypes/question.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'DonutPieChart.dart';
-import 'package:charts_flutter/flutter.dart' as charts;
-import 'package:flare_flutter/flare_actor.dart';
 
 class BottomNavBar extends StatefulWidget {
   final List<Question> questions;
@@ -70,8 +67,28 @@ class _BottomNavBar extends State<BottomNavBar> {
       onWillPop: _onWillPop,
       child: Scaffold(
         body: Center(
-            child: ListView(
-          children: <Widget>[],
+            child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: ListView(
+            children: <Widget>[
+              Image.asset('assets/banner.png'),
+              Text(
+                "\nSyllabus :",
+                style: TextStyle(
+                  fontSize: 25,
+                ),
+              ),
+              Wrap(
+                children: <Widget>[
+                  Text(
+                    "\n1.    Introduction to computer \n\n2.    Introduction to GUI Based Operating System \n\n3.    Elements of Word Processing\n\n4.    Spreadsheets \n\n5.    Computer communication and Internet\n\n6.    WWW and web browsers \n\n7.    Communication and Collaboration\n\n8.    Making small presentations",
+                    style: TextStyle(
+                        fontSize: 16, color: Color.fromARGB(255, 92, 92, 92)),
+                  )
+                ],
+              ),
+            ],
+          ),
         )),
         bottomNavigationBar: BottomNavigationBar(
           items: <BottomNavigationBarItem>[

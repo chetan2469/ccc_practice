@@ -66,6 +66,7 @@ class _HomePage extends State<HomePage> {
   connectionRequestPopup() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
     if (sp.getString("language") == null) {
+      sp.setString('language', 'English');
       showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -162,8 +163,7 @@ class _HomePage extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.network(
-                  'https://samyakinfotech.com/wp-content/uploads/2017/03/CCC-Training-Course-Banner.png'),
+              Image.asset('assets/banner.png'),
               Container(
                 width: 180,
                 height: 60,

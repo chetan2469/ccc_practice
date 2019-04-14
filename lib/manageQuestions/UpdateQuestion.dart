@@ -61,7 +61,6 @@ class _UpdateQuestion extends State<UpdateQuestion> {
       op4Validate = true,
       ansValidate = true;
 
-  
   String _selectedLanguage;
   String ans;
 
@@ -95,6 +94,7 @@ class _UpdateQuestion extends State<UpdateQuestion> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Update Question Details",
+      theme: ThemeData(primaryColor: Colors.lightBlue[900]),
       home: Scaffold(
         appBar: AppBar(
           title: Text("Update Details"),
@@ -107,7 +107,7 @@ class _UpdateQuestion extends State<UpdateQuestion> {
                 "cancle",
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.blue,
+              color: Colors.lightBlue[900],
             ),
             RaisedButton(
               onPressed: () {
@@ -128,7 +128,7 @@ class _UpdateQuestion extends State<UpdateQuestion> {
                 "Update",
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.blue,
+              color: Colors.lightBlue[900],
             )
           ],
         ),
@@ -154,7 +154,7 @@ class _UpdateQuestion extends State<UpdateQuestion> {
                     child: Row(
                       children: <Widget>[
                         Radio(
-                          activeColor: Colors.blue,
+                          activeColor: Colors.lightBlue[900],
                           value: op1Controller.text,
                           groupValue: ans,
                           onChanged: (String a) {
@@ -180,7 +180,7 @@ class _UpdateQuestion extends State<UpdateQuestion> {
                     child: Row(
                       children: <Widget>[
                         Radio(
-                            activeColor: Colors.blue,
+                            activeColor: Colors.lightBlue[900],
                             value: op2Controller.text,
                             groupValue: ans,
                             onChanged: (String a) {
@@ -205,7 +205,7 @@ class _UpdateQuestion extends State<UpdateQuestion> {
                     child: Row(
                       children: <Widget>[
                         Radio(
-                            activeColor: Colors.blue,
+                            activeColor: Colors.lightBlue[900],
                             value: op3Controller.text,
                             groupValue: ans,
                             onChanged: (String a) {
@@ -230,7 +230,7 @@ class _UpdateQuestion extends State<UpdateQuestion> {
                     child: Row(
                       children: <Widget>[
                         Radio(
-                            activeColor: Colors.blue,
+                            activeColor: Colors.lightBlue[900],
                             value: op4Controller.text,
                             groupValue: ans,
                             onChanged: (String a) {

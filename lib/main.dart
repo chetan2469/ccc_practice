@@ -35,10 +35,9 @@ class _Myapp extends State<MyApp> {
     fillQuestions(); //fill question from database to list
   }
 
-  void clearQuestionList(){
+  void clearQuestionList() {
     widget.questions.clear();
   }
-
 
   connectionRequestPopup() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
@@ -79,7 +78,7 @@ class _Myapp extends State<MyApp> {
 
     SharedPreferences sp = await SharedPreferences.getInstance();
 
-    print(sp.getString("language")+"___________________________");
+    print(sp.getString("language") + "___________________________");
 
     if (sp.getString("language") == "English") {
       link =
@@ -221,19 +220,24 @@ class _Myapp extends State<MyApp> {
       widget.questions.add(q);
     });
 
-    if(widget.questions.length<90){
+    if (widget.questions.length < 90) {
       fetchData();
     }
   }
+
+  Color PrimaryColor = Colors.lightBlue[900];
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Chedo On Fire",
+      theme: ThemeData(
+          primaryColor: PrimaryColor,
+          ),
       routes: {
-        "/dashboard": (BuildContext context) => Dashboard(
-            widget.questions, sendToFirebase, getDataFromFirebase, fetchData,clearQuestionList),
+        "/dashboard": (BuildContext context) => Dashboard(widget.questions,
+            sendToFirebase, getDataFromFirebase, fetchData, clearQuestionList),
         "/notes": (BuildContext context) => NoteDrawer(),
         "/exam": (BuildContext context) =>
             Exam(widget.questions, sp.getString("language")),

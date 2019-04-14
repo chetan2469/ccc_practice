@@ -197,7 +197,7 @@ class _AddQuestion extends State<AddQuestion> {
                             Navigator.pushReplacementNamed(
                                 context, '/dashboard');
                           },
-                          color: Colors.blueAccent,
+                          color: Colors.lightBlue[900],
                           child: Text(
                             "back",
                             style: TextStyle(color: Colors.white),
@@ -248,7 +248,7 @@ class _AddQuestion extends State<AddQuestion> {
                               Scaffold.of(context).showSnackBar(snackBarAlert);
                             }
                           },
-                          color: Colors.blueAccent,
+                          color: Colors.lightBlue[900],
                           child: Text(
                             "submit",
                             style: TextStyle(color: Colors.white),

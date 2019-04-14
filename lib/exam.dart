@@ -215,7 +215,7 @@ class _Exam extends State<Exam> with SingleTickerProviderStateMixin {
                 style: TextStyle(color: Colors.white),
               ),
               disabledColor: iconColor,
-              color: Colors.blue,
+              color: Colors.lightBlue[900],
             )
           ],
           bottom: TabBar(

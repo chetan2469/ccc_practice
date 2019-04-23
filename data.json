@@ -2355,7 +2355,981 @@
 "op3" : "कॉलर नेम वर क्लिक करणे",
 "op4" : "वरील सर्व",
 "question" : "MS Excel मध्ये हे कोणत्या कॉलमला सेलेक्ट करण्याचा सर्वात सोपा मार्ग आहे"
-}      
+},
+{
+"ans" : "फॉर्म्युला काम नाही करत",
+"language" : "Marathi",
+"op1" : "फॉर्म्युला त्रुटी",
+"op2" : "काही प्रभाव नाही होत",
+"op3" : "फॉर्म्युला काम नाही करत",
+"op4" : "b व c",
+"question" : "MS Excel मध्ये फॉर्मुला च्या आधी = न लावल्यास काय होईल"
+},
+{
+"ans" : "महात्मा गांधी नॅशनल रुलर एम्प्लॉयमेंट गॅरेंटी स्कीम",
+"language" : "Marathi",
+"op1" : "महात्मा गांधी न्यूट्रिशियन रुलर एम्प्लॉयमेंट जनरेशन स्किन",
+"op2" : "महात्मा गांधी नॅशनल रुलर एम्प्लॉयमेंट गॅरेंटी स्कीम",
+"op3" : "महात्मा गांधी नॅशनल रुरल एम्प्लॉयमेंट जनरेशन स्कीम",
+"op4" : "वरील सर्व",
+"question" : "एमजी एन आर सी जी एस चे संक्षिप्त रूप काय आहे"
+},
+{
+"ans" : "privacy enhanced mail",
+"language" : "Marathi",
+"op1" : "private email message",
+"op2" : "personal email message",
+"op3" : "privacy enhanced mail",
+"op4" : "private enhanced mail",
+"question" : "PEM चा फुल फॉर्म आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ",",
+"op4" : ",",
+"question" : "header व footer प्रयोग केल्यावर सर्व पेजेस समान स्वरूप मध्ये दिसतात"
+},
+{
+"ans" : "पाच लाख",
+"language" : "Marathi",
+"op1" : "100000",
+"op2" : "पाच लाख",
+"op3" : "1000000",
+"op4" : "1500000",
+"question" : "प्रधानमंत्री मुद्रा योजनेच्या किशोर कॅटेगरीमध्ये किती कर्ज मिळू शकते"
+},
+{
+"ans" : "insert",
+"language" : "Marathi",
+"op1" : "view",
+"op2" : "insert",
+"op3" : "edit",
+"op4" : "file",
+"question" : "chart menu कोणत्या ऑप्शन मध्ये असते"
+},
+{
+"ans" : "7",
+"language" : "Marathi",
+"op1" : "4",
+"op2" : "5",
+"op3" : "7",
+"op4" : "8",
+"question" : "OSI मॉडेल मध्ये किती लेयर असतात"
+},
+{
+"ans" : "permanent account number",
+"language" : "Marathi",
+"op1" : "permanent account number",
+"op2" : "present account number",
+"op3" : "primary account number",
+"op4" : "personal account number",
+"question" : "PAN चा  फुल फॉर्म आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : " .",
+"op4" : ".",
+"question" : "DNS SERVER मध्ये 2 server असतात primary  व secondary"
+},
+{
+"ans" : "1990",
+"language" : "Marathi",
+"op1" : "1969",
+"op2" : "1985",
+"op3" : "1989",
+"op4" : "1990",
+"question" : "इंटरनेट ची सुरुवात केव्हा झाली"
+},
+{
+"ans" : "unsolicited commercial email",
+"language" : "Marathi",
+"op1" : "user client extension",
+"op2" : "user client email",
+"op3" : "unsolicited commercial email",
+"op4" : "वरीलपैकी कोणीच नाही",
+"question" : "UCE पूर्ण रूप आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "नेटवर्कच्या नेटवर्क ला इंटरनेट म्हणतात"
+},
+{
+"ans" : "virtualbox",
+"language" : "Marathi",
+"op1" : "Windows",
+"op2" : "Linux",
+"op3" : "virtualbox",
+"op4" : "iOS",
+"question" : "खालीलपैकी कोणता एक प्रसिद्ध ऑपरेटिंग सिस्टिम नाही आहे"
+},
+{
+"ans" : "वरील सर्व",
+"language" : "Marathi",
+"op1" : "लोकर ला seal करू शकता",
+"op2" : "लोकर चा वापर करण्यास नकार देऊ शकते",
+"op3" : "नोटीस देऊन लोकर खोलू शकतो",
+"op4" : "वरील सर्व",
+"question" : "लोकर चा भाडं नाही दिले तर बँक काय करते"
+},
+{
+"ans" : "facebook.com",
+"language" : "Marathi",
+"op1" : "yahoo.com",
+"op2" : "google.com",
+"op3" : "ask.com",
+"op4" : "facebook.com",
+"question" : "खालीलपैकी कोणता सर्च इंजिन नाही आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "आपला ईमेल आयडी वरून आपण स्वतःला ईमेल पाठवू शकतो"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "data transmission ची स्पीड MHz मध्ये मोजली जाते"
+},
+{
+"ans" : "C2C",
+"language" : "Marathi",
+"op1" : "B2C",
+"op2" : "G2C",
+"op3" : "G2B",
+"op4" : "C2C",
+"question" : "कोणता सेगमेंट एकमेकांसोबत डील करणारा यूजर केंद्रित आहे"
+},
+{
+"ans" : "50000",
+"language" : "Marathi",
+"op1" : "30000",
+"op2" : "40000",
+"op3" : "50000",
+"op4" : "अमर्याद",
+"question" : "लघु अकाउंट मध्ये जास्तीत जास्त किती राशी जमा केली जाते"
+},
+{
+"ans" : "employees provident fund",
+"language" : "Marathi",
+"op1" : "employees provident fund",
+"op2" : "एम्पलोयी पर्सनल फंड",
+"op3" : "एम्पलोयी प्रायव्हेट फंड",
+"op4" : "वरीलपैकी नाही",
+"question" : "ईपीएफ चे संक्षिप्त रूप काय आहे"
+},
+{
+"ans" : "optical disk",
+"language" : "Marathi",
+"op1" : "magnetic disk",
+"op2" : "magnetic tape",
+"op3" : "optical disk",
+"op4" : "plastic disk",
+"question" : "खालीलपैकी सीडी काय आहे"
+},
+{
+"ans" : "form",
+"language" : "Marathi",
+"op1" : "database",
+"op2" : "form",
+"op3" : "record",
+"op4" : "tuple",
+"question" : "साधारण DBMS पेक्षा अधिक यूजर फ्रेंडली इंटर्फेस वाल्या प्रोग्राम ला...... म्हणतात"
+},
+{
+"ans" : "4",
+"language" : "Marathi",
+"op1" : "2",
+"op2" : "3",
+"op3" : "4",
+"op4" : "5",
+"question" : "IPV4 मध्ये किती भाग आहे"
+},
+{
+"ans" : "RING",
+"language" : "Marathi",
+"op1" : "BUS",
+"op2" : "RING",
+"op3" : "MESH",
+"op4" : "STAR",
+"question" : "repeater चा कशात प्रयोग केला जातो"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "FQDN एक डोमेन नेम आहे जे हाेस्ट नेम आणि आणि डोमेन नेम ने पूर्ण होते"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "Internet explorer बहुतांश मध्ये वापरला जातो"
+},
+{
+"ans" : "ctrl+-",
+"language" : "Marathi",
+"op1" : "ctrl+D",
+"op2" : "ctrl+-",
+"op3" : "alt+-",
+"op4" : "ctrl+shift+-",
+"question" : "रो आणि कॉलम डिलीट करण्याची शॉर्टकट की आहे"
+},
+{
+"ans" : "टॅक्स डिटेक्शन ओन सोर्स",
+"language" : "Marathi",
+"op1" : "जीवन सुरक्षा योजना",
+"op2" : "बचत खाते योजना",
+"op3" : "मर्यादित जमा योजना",
+"op4" : "टॅक्स डिटेक्शन ओन सोर्स",
+"question" : "टी डी एस चा संक्षिप्त रूप"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "सर्वर  कम्प्युटर आणि युजर कम्प्युटरची ऑपरेटिंग सिस्टिम समान असते"
+},
+{
+"ans" : "booting",
+"language" : "Marathi",
+"op1" : "start",
+"op2" : "turnoff",
+"op3" : "booting",
+"op4" : "startup",
+"question" : "सिस्टीम ला स्टार्ट करण्याला म्हणतात"
+},
+{
+"ans" : "MS PowerPoint",
+"language" : "Marathi",
+"op1" : "MS word",
+"op2" : "MS Excel",
+"op3" : "MS PowerPoint",
+"op4" : "Adobe reader",
+"question" : "कोणत्याही प्रेझेंटेशनला प्रेझेंट करण्यासाठी खालीलपैकी कोणते सॉफ्टवेअर  उपयोग केला जातो"
+},
+{
+"ans" : "स्विच मोड पॉवर सप्लाय",
+"language" : "Marathi",
+"op1" : "सर्विस मोड पॉवर सप्लाय",
+"op2" : "स्विच मोड पॉवर सप्लाय",
+"op3" : "मेन पॉवर सप्लाय",
+"op4" : "सेव वॉटर पावर सप्लाय",
+"question" : "SMPS चा फुल फॉर्म काय आहे"
+},
+{
+"ans" : "portable document format",
+"language" : "Marathi",
+"op1" : "portable document file",
+"op2" : "portable document format",
+"op3" : "private document format",
+"op4" : "portable digital format",
+"question" : "PDF चा फुल फॉर्म आहे"
+},
+{
+"ans" : "chat server",
+"language" : "Marathi",
+"op1" : "mail server",
+"op2" : "chat server",
+"op3" : "client server",
+"op4" : "message server",
+"question" : "इन्स्टंट मेसेज साठी कोणत्या सर्वर चा प्रयोग केला जातो"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "Exlc Ms Excel फाइल चा एक्सटेन्शन आहे"
+},
+{
+"ans" : "static random Access memory",
+"language" : "Marathi",
+"op1" : "secondary random Access memory",
+"op2" : "storage random Access memory",
+"op3" : "static random Access memory",
+"op4" : "super random Access memory",
+"question" : "SRAM चा फुल फॉर्म आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "X.25 एक नेटवर्क प्रोटोकॉल आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "text file ला एम एस वर्ड मध्ये ते नाही पाहू शकत"
+},
+{
+"ans" : "mosaic",
+"language" : "Marathi",
+"op1" : "netiquette",
+"op2" : "navigator",
+"op3" : "archie",
+"op4" : "mosaic",
+"question" : "खालीलपैकी पहिला वेब ब्राऊजर आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "HTML मध्ये<> च्या आत url लिहिला जातो"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "software चे दोन प्रकार असतात"
+},
+{
+"ans" : "multi byte character set",
+"language" : "Marathi",
+"op1" : "many bit character set",
+"op2" : "many bold character set",
+"op3" : "multi byte character set",
+"op4" : "many byte character set",
+"question" : "MBCS चा फुल फॉर्म आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "backspace च्या मदतीने कर्सर  च्या उजव्या बाजूचा टेक्स्ट डिलीट केला जातो"
+},
+{
+"ans" : "hexadecimal",
+"language" : "Marathi",
+"op1" : "binary",
+"op2" : "octal",
+"op3" : "decimal",
+"op4" : "hexadecimal",
+"question" : "चार बाइनरी संख्यांच्या समूहाला"
+},
+{
+"ans" : "जप्त केल्याची पावती दिली जाते",
+"language" : "Marathi",
+"op1" : "कस्टमरला वापस केले जाते",
+"op2" : "नोटांना खऱ्या नोटांमध्ये बदलले जाते",
+"op3" : "खात्यामध्ये जमा केले जाते",
+"op4" : "जप्त केल्याची पावती दिली जाते",
+"question" : "काउंटरवर जाली नोटाचा पत्ता लागल्यावर बँकेद्वारा"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "MX Excel मध्ये नेम बॉक्स नेम बॉक्स फॉर्मुला बारच्या उजव्या बाजूला असतं"
+},
+{
+"ans" : "100000 ",
+"language" : "Marathi",
+"op1" : "100000 ",
+"op2" : "200000",
+"op3" : "300000",
+"op4" : "पाच लाख",
+"question" : "प्रधानमंत्री सुरक्षा विमा योजना च्या अंतर्गत____टेम्पररी अपंग ता दावा किती आहे"
+},
+{
+"ans" : "voice over internet protocol",
+"language" : "Marathi",
+"op1" : "voice over internet protocol",
+"op2" : "video over internet protocol",
+"op3" : "voice on internet protocol",
+"op4" : "virtual over internet protocol",
+"question" : "VOIP चा फुल फॉर्म आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true ",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "*  व ? चा प्रयोग फोल्डरच्या नावात करू शकतो"
+},
+{
+"ans" : "वरील सर्व",
+"language" : "Marathi",
+"op1" : "एक जीवन योजना आहे",
+"op2" : "18 ते ते 50 वर्षापर्यंतची कोणतीही व्यक्ती घेऊ शकते",
+"op3" : "वार्षिक पैसे द्यायला लागतात",
+"op4" : "वरील सर्व",
+"question" : "प्रधानमंत्री जीवन ज्योती विमा योजना"
+},
+{
+"ans" : "सिद्धार्थ",
+"language" : "Marathi",
+"op1" : "परम",
+"op2" : "सिद्धार्थ",
+"op3" : "परम 800",
+"op4" : "वरील सर्व",
+"question" : "भारतात बनलेला प्रथम कम्प्युटर आहे"
+},
+{
+"ans" : ".bin",
+"language" : "Marathi",
+"op1" : ".bin",
+"op2" : ".org",
+"op3" : ".mil",
+"op4" : ".int",
+"question" : "खालीलपैकी कोणते डोमेन नाही आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "एम एस वर्ड मध्ये रिसेन्टली उपयोग केलेल्या 7 फाइल्स ची एन्ट्री असते"
+},
+{
+"ans" : "DSL",
+"language" : "Marathi",
+"op1" : "WAN",
+"op2" : "ppp",
+"op3" : "DSL",
+"op4" : "कोणी नाही",
+"question" : "Internet कनेक्शनचा प्रकार आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "कम्प्यूटर मध्ये पावर सप्लाय अल्टरनेटिव्ह करंटला डायरेक्ट करण मध्ये बदलण्याचं काम करतो"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "बाईट 8 बिट चा समूह आहे"
+},
+{
+"ans" : "रियल टाइम grossसेटलमेंट",
+"language" : "Marathi",
+"op1" : "रियल टाइम grossसेटलमेंट",
+"op2" : "रेडी टाईम ग्रॉस सेटलमेंट",
+"op3" : "रेडी टाईम ग्रोसरी सेटलमेंट",
+"op4" : "रियल टाइम ग्रोसरी सेटलमेंट",
+"question" : "आरटीजीएस चा पूर्ण रूप काय आहे"
+},
+{
+"ans" : "integrated services digital Network",
+"language" : "Marathi",
+"op1" : "integrated services digital Network",
+"op2" : "internet services digital Network",
+"op3" : "international services digital Network",
+"op4" : "integrated secure digital Network",
+"question" : "ISDN चा फुल फॉर्म"
+},
+{
+"ans" : "internet information service",
+"language" : "Marathi",
+"op1" : "international information service",
+"op2" : "internet information service",
+"op3" : "important information service",
+"op4" : "instance information service",
+"question" : "IIS चा फुल फॉर्म आहे"
+},
+{
+"ans" : "formula error",
+"language" : "Marathi",
+"op1" : "formula error",
+"op2" : "reference error",
+"op3" : "value error",
+"op4" : "वरील सर्व",
+"question" : "Ms Excel मध्ये#Name ? error चा काय अर्थ आहे"
+},
+{
+"ans" : "extensible markup language",
+"language" : "Marathi",
+"op1" : "extensible markup language",
+"op2" : "executable markup language",
+"op3" : "executable medium language",
+"op4" : "extra markup language",
+"question" : "XML चा फुल फॉर्म आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "डॉट मॅट्रिक्स प्रिंटर मध्ये विजेचा उपयोग होत नाही"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "प्रोग्रामर अप्लिकेशन सॉफ्टवेअर बनवण्यासाठी विविध भाषा चा उपयोग करतात"
+},
+{
+"ans" : "terminal",
+"language" : "Marathi",
+"op1" : "light pen",
+"op2" : "mouse",
+"op3" : "terminal",
+"op4" : "digitiger",
+"question" : "जेव्हा एकापेक्षा अधिक व्यक्ती सेंट्रल कम्प्युटरचा उपयोग करतात तेव्हा....... ची आवश्यकता पडते"
+},
+{
+"ans" : "वरील सर्व",
+"language" : "Marathi",
+"op1" : "आग",
+"op2" : "चोरी",
+"op3" : "सेंध मारी",
+"op4" : "वरील सर्व",
+"question" : "जनरल इन्शुरन्ससाठी ______आहे"
+},
+{
+"ans" : "TB",
+"language" : "Marathi",
+"op1" : "kb",
+"op2" : "mb",
+"op3" : "tb",
+"op4" : "gb",
+"question" : "खालीलपैकी कोण सर्वात मोठा आहे"
+},
+{
+"ans" : "username",
+"language" : "Marathi",
+"op1" : "domain name",
+"op2" : "username",
+"op3" : "email name",
+"op4" : "email ID",
+"question" : "chedotech@gmail.com मध्ये chedotech काय आहे"
+},
+{
+"ans" : ".bit",
+"language" : "Marathi",
+"op1" : ".gif",
+"op2" : ".bit",
+"op3" : ".jpeg",
+"op4" : ".png",
+"question" : "यांपैकी पिक्चर फाईलचा एक्सटेन्शन नाही आहे"
+},
+{
+"ans" : "एक आणि दोन",
+"language" : "Marathi",
+"op1" : "चालू खाते",
+"op2" : "जनधन खाते",
+"op3" : "आवर्ती जमा खाते",
+"op4" : "एक आणि दोन",
+"question" : "ओव्हर ड्राफ्ट ची सुविधा कोणत्या बँक खात्यावर मिळू शकते"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "1 बायनरी रिप्रेझेंटेशन मध्ये आपण 1 किंवा 2 अंकांचा उपयोग करू शकतो"
+},
+{
+"ans" : "b & c",
+"language" : "Marathi",
+"op1" : "plastic card",
+"op2" : "ATM CARD",
+"op3" : "debit card",
+"op4" : "b & c",
+"question" : "Rupay काय आहे"
+},
+{
+"ans" : "वरील सर्व",
+"language" : "Marathi",
+"op1" : "press key f2 ",
+"op2" : "click formula bar",
+"op3" : "double click the cell",
+"op4" : "वरील सर्व",
+"question" : "Ms Excel मध्ये सेल एडिट करण्याचे शॉर्टकट की आहे"
+},
+{
+"ans" : "ctrl+f",
+"language" : "Marathi",
+"op1" : "alt+f",
+"op2" : "f3",
+"op3" : "ctrl+f",
+"op4" : "ctrl+shift+f",
+"question" : "कोणत्याही फाईल मध्ये टेक्स्ट सर्च करायची शॉर्टकट की आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "एडिट मेनू मध्ये जाऊन एक्सेल शीट मध्ये चार्ट इन्सर्ट करू शकतो"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "right click च्या मदतीने सिलेक्ट केले जाऊ शकते"
+},
+{
+"ans" : "ctrl+home",
+"language" : "Marathi",
+"op1" : "alt+home",
+"op2" : "ctrl+home",
+"op3" : "pageup",
+"op4" : "shift+home",
+"question" : "कार्यक्रम मध्ये जायचे शॉर्टकट की आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "PROM चप पूर्ण रूप आहे permanent read only memory"
+},
+{
+"ans" : "4",
+"language" : "Marathi",
+"op1" : "3",
+"op2" : "4",
+"op3" : "5",
+"op4" : "7",
+"question" : "TCP/IP model मध्ये किती लेयेर असतात"
+},
+{
+"ans" : "1",
+"language" : "Marathi",
+"op1" : "1",
+"op2" : "2",
+"op3" : "3",
+"op4" : "4",
+"question" : "Ms word table मध्ये कमीत कमी किती row आणि column असतात"
+},
+{
+"ans" : "a & b",
+"language" : "Marathi",
+"op1" : "प्रायमरी",
+"op2" : "non volatile",
+"op3" : "Auxiliary",
+"op4" : "a & b",
+"question" : "ROM कोणत्या प्रकारची मेमरी आहे"
+},
+{
+"ans" : "4",
+"language" : "Marathi",
+"op1" : "2",
+"op2" : "3",
+"op3" : "4",
+"op4" : "5",
+"question" : "IPV4 मध्ये किती भाग असतात"
+},
+{
+"ans" : "सहामहिन्याला",
+"language" : "Marathi",
+"op1" : "दर महिन्याला",
+"op2" : "तीन महिन्याला",
+"op3" : "सहामहिन्याला",
+"op4" : "वर्षाला",
+"question" : "बँकेद्वारे बचत खात्यावर ्व्यास कधी दिले जाते"
+},
+{
+"ans" : "protocol",
+"language" : "Marathi",
+"op1" : "telecommunication",
+"op2" : "protocol",
+"op3" : "network",
+"op4" : "वरीलपैकी काहीही नाही",
+"question" : "RS-232 काय आहे"
+},
+{
+"ans" : "internet information services",
+"language" : "Marathi",
+"op1" : "international information services",
+"op2" : "internet information services",
+"op3" : "important information services",
+"op4" : "instant information services",
+"question" : "IIS चा फुल फॉर्म आहे"
+},
+{
+"ans" : "ctrl+alt+c",
+"language" : "Marathi",
+"op1" : "ctrl+alt+c",
+"op2" : "ctrl+shift+c",
+"op3" : "alt+c",
+"op4" : "shift+c",
+"question" : "copyright © सिम्बॉल क्रिएट करण्याची शॉर्टकट की आहे"
+},
+{
+"ans" : "format",
+"language" : "Marathi",
+"op1" : "edit",
+"op2" : "format",
+"op3" : "view",
+"op4" : "font",
+"question" : "font size व font effect कोणत्या मेन्यूमध्ये असतात"
+},
+{
+"ans" : "1000",
+"language" : "Marathi",
+"op1" : "1000",
+"op2" : "2000",
+"op3" : "3000",
+"op4" : "4000",
+"question" : "अटल पेन्शन योजना (APY) च्या माध्यमातून किती पेन्शन मिळते"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : " true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "file ओपन असल्यावर त्याचं नाव बदलू जाऊ शकतो"
+},
+{
+"ans" : "multi byte character set",
+"language" : "Marathi",
+"op1" : "many bit character set",
+"op2" : "many bold character set",
+"op3" : "multi byte character set",
+"op4" : "many byte character set",
+"question" : "MBCS फुल फ्रॉम आहे"
+},
+{
+"ans" : "चूक",
+"language" : "Marathi",
+"op1" : "बरोबर",
+"op2" : "चूक",
+"op3" : ".",
+"op4" : ".",
+"question" : "मॉनिटर सीपीयू च्या आत मध्ये पाहणारा एक सॉफ्टवेअर आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "windows 2000 एक ऑपरेटिंग सिस्टीम आहे"
+},
+{
+"ans" : "business to business",
+"language" : "Marathi",
+"op1" : "base to base",
+"op2" : "best business",
+"op3" : "business to business",
+"op4" : "business to base",
+"question" : "B2B पूर्ण रूप काय आहे"
+},
+{
+"ans" : "notification area",
+"language" : "Marathi",
+"op1" : "taskbar",
+"op2" : "notification area",
+"op3" : "status bar",
+"op4" : "side bar",
+"question" : "टाईम आणि डेट कुठे दिसते"
+},
+{
+"ans" : "*",
+"language" : "Marathi",
+"op1" : "@",
+"op2" : "#",
+"op3" : "*",
+"op4" : "!",
+"question" : "कोणत्या सिम्बॉल चा उपयोग फाईल च्या नावात नाही होत"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "view menu मध्ये cut copy replace goto ते ऑप्शन असतात"
+},
+{
+"ans" : "कर्ज चुकवणारा",
+"language" : "Marathi",
+"op1" : "कर्ज चुकवणारा",
+"op2" : "पैशांची चोरी करणारा",
+"op3" : "बँकेत पैसा नजमा करणारा",
+"op4" : "वरील सर्व",
+"question" : "डिफॉल्टर कोणाला म्हणतात"
+},
+{
+"ans" : "रजनीश कुमार",
+"language" : "Marathi",
+"op1" : "अरुंधती भट्टाचार्य",
+"op2" : "उर्जित पटेल",
+"op3" : "रजनीश कुमार",
+"op4" : "राजेश कुमार",
+"question" : "वर्तमानात एसबीआय चा चेअरमन कोण आहे"
+},
+{
+"ans" : "outbox",
+"language" : "Marathi",
+"op1" : "inbox",
+"op2" : "outbox",
+"op3" : "trace",
+"op4" : "वरीलपैकी कोणीही नाही",
+"question" : "सेंड केलेला ईमेल कुठे सेव्ह होतो"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "telnet मध्ये फाइल ट्रान्सफर केली जाऊ शकते"
+},
+{
+"ans" : "नॅशनल इलेक्ट्रॉनिक फनट्रान्सफर",
+"language" : "Marathi",
+"op1" : "नॅशनल इझी फंड ट्रान्सफर",
+"op2" : "नॅशनल इलेक्ट्रिक फंड ट्रान्सफर",
+"op3" : "नॅशनल इलेक्ट्रॉनिक फनट्रान्सफर",
+"op4" : "नॅशनल इलेक्ट्रिकल फन ट्रान्सफर",
+"question" : "N E F T चे संक्षिप्त रूप"
+},
+{
+"ans" : "secure",
+"language" : "Marathi",
+"op1" : "secure",
+"op2" : "security",
+"op3" : "system",
+"op4" : " software",
+"question" : "https मध्ये s अर्थ आहे"
+},
+{
+"ans" : "true ",
+"language" : "Marathi",
+"op1" : "true ",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "इंटरनेटच्या माध्यमातून एका कॉम्प्युटर मधून दुसऱ्या कम्प्युटरमध्ये फाईल पाठवलेला अपलोडिंग म्हणले जाते"
+},
+{
+"ans" : "डिस्क डिफ्रागमेंटर",
+"language" : "Marathi",
+"op1" : "डिस्क डिफ्रागमेंटर",
+"op2" : "डिस्क क्लीनअप",
+"op3" : "डिक्स फोर मास्टर",
+"op4" : "वरील सर्व",
+"question" : "प्रोग्राम ची गती वाढवण्यासाठी वापरल्या जाणाऱ्या युटिलिटी ला म्हणतात"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "GUI च्या मदतीने आपण एक्सेल शीट मध्ये ग्राफिक्स बनवू शकतो"
+},
+{
+"ans" : "1024 GB",
+"language" : "Marathi",
+"op1" : "1024 MB",
+"op2" : "1024 GB",
+"op3" : "1000 GB",
+"op4" : "100gb",
+"question" : "1 terabyte ="
+},
+{
+"ans" : "पॉईंट ऑफ सेल",
+"language" : "Marathi",
+"op1" : "पॉईंट ऑफ सिस्टीम",
+"op2" : "पॉईंट ऑफ सेल",
+"op3" : "पॉईंट ऑफ सर्विस",
+"op4" : "पॉईंट ऑफ सिक्युरिटी",
+"question" : "पी ओ एस मशीन मध्ये पीओएस चा अर्थ काय आहे"
+},
+{
+"ans" : "330  रुपये वार्षिक",
+"language" : "Marathi",
+"op1" : "12 रुपये वार्षिक",
+"op2" : "120 रुपये वार्षिक",
+"op3" : "330  रुपये वार्षिक",
+"op4" : "तीनशे रुपये वार्षिक",
+"question" : "प्रधानमंत्री जीवन ज्योती विमा योजनेत वर्षाला कितीरक्कम भरायला लागतात"
+},
+{
+"ans" : "insert object",
+"language" : "Marathi",
+"op1" : "insert",
+"op2" : "insert object",
+"op3" : "insert sheet",
+"op4" : "insert file",
+"question" : "एम एस वर्ड सोबत एक्सेल शीट कशी कनेक्ट करतात"
+}
+    
+  
   
 
     

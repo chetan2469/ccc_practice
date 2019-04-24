@@ -10,6 +10,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_database/firebase_database.dart';
 import './dataTypes/question.dart';
 import 'dart:convert';
+import 'package:connectivity/connectivity.dart';
+import 'dart:async';
 import 'package:http/http.dart' as http;
 
 void main() => runApp(new MyApp());
@@ -27,48 +29,27 @@ class _Myapp extends State<MyApp> {
   final dbHelper = DatabaseHelper.instance;
   String language;
   SharedPreferences sp;
+  final Connectivity connectivity = new Connectivity();
+  StreamSubscription<ConnectivityResult> subscription;
 
   @override
   void initState() {
     super.initState();
     createSharedPref();
-    fillQuestions(); //fill question from database to list
+    fillQuestions();
+  }
+
+  String getLanguage() {
+    return sp.getString('language');
   }
 
   void clearQuestionList() {
     widget.questions.clear();
   }
 
-  connectionRequestPopup() async {
-    SharedPreferences sp = await SharedPreferences.getInstance();
-    if (sp.getString("language") == null) {
-      showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          // return object of type Dialog
-          return AlertDialog(
-            title: Text('You have Internet Connection for first time setup !!'),
-            actions: <Widget>[
-              // usually buttons at the bottom of the dialog
-              FlatButton(
-                child: Text("ok"),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-              )
-            ],
-          );
-        },
-      );
-    }
-  }
-
   var isLoading = false;
 
   void fetchData() async {
-    String link =
-        "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/english.json";
-
     setState(() {
       isLoading = true;
     });
@@ -76,24 +57,8 @@ class _Myapp extends State<MyApp> {
     final dbHelper = DatabaseHelper.instance;
     dbHelper.deleteAll();
 
-    SharedPreferences sp = await SharedPreferences.getInstance();
-
-    print(sp.getString("language") + "___________________________");
-
-    if (sp.getString("language") == "English") {
-      link =
-          "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/english.json";
-    }
-
-    if (sp.getString("language") == "Marathi") {
-      link =
-          "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/marathi.json";
-    }
-
-    if (sp.getString("language") == "Hindi") {
-      link =
-          "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/hindi.json";
-    }
+    String link =
+        "https://raw.githubusercontent.com/chetan2469/ccc_practice/master/data.json";
 
     final response = await http.get(link);
     if (response.statusCode == 200) {
@@ -102,11 +67,11 @@ class _Myapp extends State<MyApp> {
           .toList();
       setState(() {
         isLoading = false;
+        insertListToDatabase();
       });
     } else {
       throw Exception('Failed to load ');
     }
-    insertListToDatabase();
   }
 
   void insertListToDatabase() async {
@@ -159,8 +124,6 @@ class _Myapp extends State<MyApp> {
 
   void _insert(String question, String language, String op1, String op2,
       String op3, String op4, String ans) async {
-    // row insert into table
-
     Map<String, dynamic> row = {
       DatabaseHelper.columnQuestion: question,
       DatabaseHelper.columnLanguage: language,
@@ -172,10 +135,8 @@ class _Myapp extends State<MyApp> {
     };
     final id = await dbHelper.insert(row);
 
-    //add to products List for virtual
-
     Question q = new Question(
-        id: id as int,
+        id: id,
         question: question,
         op1: op1,
         op2: op2,
@@ -191,10 +152,6 @@ class _Myapp extends State<MyApp> {
     final allRows = await dbHelper.queryAllRows();
     widget.questions.clear();
     allRows.forEach((row) {
-      //Product pd = new Product(row['_id'], row['name'], row['age']);
-      //widget.products.add(pd);
-
-//if unfortunetly answers appers op1 op2 op3 or op4 rather than orignal answer
       if (row['ans'] == 'op1') {
         ans = row['op1'];
       } else if (row['ans'] == 'op2') {
@@ -219,13 +176,7 @@ class _Myapp extends State<MyApp> {
 
       widget.questions.add(q);
     });
-
-    if (widget.questions.length < 90) {
-      fetchData();
-    }
   }
-
-  Color PrimaryColor = Colors.lightBlue[900];
 
   @override
   Widget build(BuildContext context) {
@@ -233,14 +184,14 @@ class _Myapp extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: "Chedo On Fire",
       theme: ThemeData(
-          primaryColor: PrimaryColor,
-          ),
+        primaryColor: Colors.lightBlue[900]
+      ),
       routes: {
         "/dashboard": (BuildContext context) => Dashboard(widget.questions,
             sendToFirebase, getDataFromFirebase, fetchData, clearQuestionList),
         "/notes": (BuildContext context) => NoteDrawer(),
         "/exam": (BuildContext context) =>
-            Exam(widget.questions, sp.getString("language")),
+            Exam(widget.questions, getLanguage()),
         "/manage": (BuildContext context) => ManageQuestions(widget.questions),
       },
       home: HomePage(

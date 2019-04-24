@@ -18,8 +18,4 @@ class Data {
     return spref.setString('language', uname);
   }
 
-  Future<String> getLanguage() async {
-    spref = await SharedPreferences.getInstance();
-    return spref.getString('language');
-  }
 }

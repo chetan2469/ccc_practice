@@ -13,6 +13,7 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBar extends State<BottomNavBar> {
+  String language="English";
   final List<Entry> data = <Entry>[
     Entry(
       '1.    Introduction To Computer ',
@@ -274,18 +275,42 @@ class _BottomNavBar extends State<BottomNavBar> {
 
   int _selectedIndex = 1;
 
-  void getLanguage() async {
-    SharedPreferences sp = await SharedPreferences.getInstance();
-  }
+  Future<void> examAlert() async {
+  return showDialog<void>(
+    context: context,
+    barrierDismissible: false, // user must tap button!
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('${widget.questions.length} Not Enough Question to take an Exam'),
+        content: Text('Connect to internet, go to setting and restore questions from server'),
+        actions: <Widget>[
+          FlatButton(
+            child: Text('Ok'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
+    },
+  );
+}
+
+ 
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
       if (index == 0) {
-        getLanguage();
       }
       if (index == 1) {
-        Navigator.pushReplacementNamed(context, '/exam');
+        if(widget.questions.length>100){
+          Navigator.pushReplacementNamed(context, '/exam');
+        }
+        else{
+          examAlert();
+        }
+        
       }
 
       if (index == 2) {

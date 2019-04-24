@@ -285,7 +285,7 @@ class _AddQuestion extends State<AddQuestion> {
 
     //add to products List for virtual
     Question q = new Question(
-        id:id as int,
+        id:id,
         question:questionController.text,
         op1:op1Controller.text,
         op2:op2Controller.text,

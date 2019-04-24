@@ -7,7 +7,8 @@ class Setting extends StatefulWidget {
   final Function sendToFirebase;
   final Function fetchData;
   final Function clearQuestionList;
-  Setting(this.sendToFirebase, this.fetchData,this.clearQuestionList);
+
+  Setting(this.sendToFirebase, this.fetchData, this.clearQuestionList);
 
   @override
   State<StatefulWidget> createState() {
@@ -17,18 +18,55 @@ class Setting extends StatefulWidget {
 
 class _Setting extends State<Setting> {
   Data d = new Data();
+  SharedPreferences sp;
+
+  static const menuItems = <String>[
+    'English',
+    'Hindi',
+    'Marathi',
+  ];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    sharedPref();
+  }
+
+  String language;
+  void sharedPref() async {
+    sp = await SharedPreferences.getInstance();
+    language = sp.getString('language');
+    print(language + "________________________________________________");
+  }
+
+  final List<DropdownMenuItem<String>> _dropDownMenuItems = menuItems
+      .map(
+        (String value) => DropdownMenuItem<String>(
+              value: value,
+              child: Text(value),
+            ),
+      )
+      .toList();
+
+  void setLanguage(String lang) {
+    setState(() {
+      sp.setString('language', lang);
+    });
+    print("==================${lang}=========================");
+  }
+
   Widget _languagePopup() => PopupMenuButton<int>(
         itemBuilder: (context) => [
               PopupMenuItem(
                 value: 1,
                 child: GestureDetector(
                   onTap: () {
-                    print("English");
+                    print("==================English=========================");
                     Navigator.pop(context);
                     setState(() {
-                      d.setLanguage("English");
+                      setLanguage("English");
                     });
-                     widget.fetchData();
                   },
                   child: Text("English"),
                 ),
@@ -37,28 +75,26 @@ class _Setting extends State<Setting> {
                 value: 2,
                 child: GestureDetector(
                   onTap: () {
-                    print("Hindi");
+                    print("==================Marathi=========================");
                     Navigator.pop(context);
                     setState(() {
-                   //   d.setLanguage("Hindi");
+                      setLanguage("Marathi");
                     });
-                     widget.fetchData();
                   },
-                  child: Text("Hindi"),
+                  child: Text("Marathi"),
                 ),
               ),
               PopupMenuItem(
                 value: 3,
                 child: GestureDetector(
                   onTap: () {
-                    print("Marathi");
+                    print("==================Hindi=========================");
                     Navigator.pop(context);
                     setState(() {
-                    //  d.setLanguage("Marathi");
+                      setLanguage("Hindi");
                     });
-                     widget.fetchData();
                   },
-                  child: Text("Marathi"),
+                  child: Text("Hindi"),
                 ),
               )
             ],
@@ -70,120 +106,55 @@ class _Setting extends State<Setting> {
       appBar: AppBar(
         title: Text("Settings"),
       ),
-      body: ListView(
-        children: <Widget>[
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
-            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-            child: Row(
-              children: <Widget>[
-                Text(
-                  "Default Language",
-                  style: TextStyle(fontSize: 20),
-                ),
-                SizedBox(
-                  width: 95,
-                ),
-                _languagePopup()
-              ],
-            ),
-          ),
-          GestureDetector(
-            onTap: () async {
-              SharedPreferences sp = await SharedPreferences.getInstance();
-              widget.sendToFirebase(sp.getString('uname'));
-
-              showInSnackBar("thanks for Community...");
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
-              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    "Backup to Server",
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  SizedBox(
-                    width: 115,
-                  ),
-                  Icon(Icons.backup)
-                ],
+      body: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: ListView(
+          children: <Widget>[
+            ListTile(
+              title: Text('Default Language'),
+              trailing: DropdownButton(
+                value: language,
+                hint: Text('Choose'),
+                onChanged: ((String newValue) {
+                  setState(() {
+                    language = newValue;
+                    setLanguage(newValue);
+                  });
+                }),
+                items: _dropDownMenuItems,
               ),
             ),
-          ),
-           GestureDetector(
-            onTap: () async {
-              SharedPreferences sp = await SharedPreferences.getInstance();
-              widget.fetchData();
-              showInSnackBar("data is fetching from server...");
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
-              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    "Restore Questions",
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  SizedBox(
-                    width: 105,
-                  ),
-                  Icon(Icons.update)
-                ],
+            ListTile(
+              title: Text('Restore Questions'),
+              trailing: Container(
+                margin: EdgeInsets.only(right: 50),
+                child: GestureDetector(
+                  onTap: () async {
+                    final dbHelper = DatabaseHelper.instance;
+                    dbHelper.deleteAll();
+                    widget.fetchData();
+                  },
+                  child: Icon(Icons.restore),
+                ),
               ),
             ),
-          ),
-          GestureDetector(
-            onTap: () async {
-              SharedPreferences sp = await SharedPreferences.getInstance();
-             final dbHelper = DatabaseHelper.instance;
-            dbHelper.deleteAll();
-            widget.clearQuestionList();
-              showInSnackBar("data is fetching from server...");
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
-              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-              child: Row(
-                children: <Widget>[
-                  Text(
-                    "Clear Questions",
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  SizedBox(
-                    width: 124,
-                  ),
-                  Icon(Icons.restore)
-                ],
+            ListTile(
+              title: Text('Remove All Questions'),
+              trailing: Container(
+                margin: EdgeInsets.only(right: 50),
+                child: GestureDetector(
+                  onTap: () async {
+                    final dbHelper = DatabaseHelper.instance;
+                    dbHelper.deleteAll();
+                    widget.clearQuestionList();
+                  },
+                  child: Icon(Icons.delete),
+                ),
               ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
-            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-            child: Row(
-              children: <Widget>[
-                Text(
-                  "Share your Data",
-                  style: TextStyle(fontSize: 20),
-                ),
-                SizedBox(
-                  width: 122,
-                ),
-                Icon(Icons.share)
-              ],
-            ),
-          )
-        ],
+          ],
+        ),
       ),
     );
-  }
-
-  void showInSnackBar(String value) {
-    Scaffold.of(context).showSnackBar(new SnackBar(
-        content: new Text(value)
-    ));
   }
 }

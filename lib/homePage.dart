@@ -4,14 +4,16 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './staticData/Data.dart';
 import 'dataTypes/question.dart';
-import 'package:connectivity/connectivity.dart';
 import 'db/DatabaseHelper.dart';
+
+import 'package:connectivity/connectivity.dart';
 import 'dart:async';
 
 class HomePage extends StatefulWidget {
   final Function sendToFirebase;
   final Function getDataFromFirebase;
   final Function fetchData;
+
   final List<Question> questions;
   HomePage(this.sendToFirebase, this.getDataFromFirebase, this.questions,
       this.fetchData);
@@ -35,67 +37,30 @@ class _HomePage extends State<HomePage> {
     registeredUser();
   }
 
-  void checkInternetCon() {
+  void registeredUser() async {
+    Data d = new Data();
+    if (d.getUName() == null) {
+      d.setUName('guest');
+      d.setLanguage('English');
+    }
+  }
+
+  void checkInternetConForFillData() {
     subscription = Connectivity()
         .onConnectivityChanged
         .listen((ConnectivityResult result) {
-      if (result == ConnectivityResult.mobile) {
-        print(
-            "Connected to Mobile Network !!-------------------------------------------");
-        d.setUName("chedo");
+      if (result == ConnectivityResult.mobile ||
+          result == ConnectivityResult.wifi) {
         final dbHelper = DatabaseHelper.instance;
+        print(
+            "Connected !! Fetching Data-------------------------------------------");
         dbHelper.deleteAll();
         widget.fetchData();
-        print("Makeing NULL DATABASE");
-        Navigator.pushReplacementNamed(context, '/dashboard');
-      } else if (result == ConnectivityResult.wifi) {
-        print(
-            "Connected to wifi Network !!-------------------------------------------");
-        d.setUName("chedo");
-        final dbHelper = DatabaseHelper.instance;
-        dbHelper.deleteAll();
-        print("MAkeing NULL DATABASE");
         Navigator.pushReplacementNamed(context, '/dashboard');
       } else {
         print("Not Connected !!-------------------------------------------");
-        connectionRequestPopup();
       }
     });
-  }
-
-  connectionRequestPopup() async {
-    SharedPreferences sp = await SharedPreferences.getInstance();
-    if (sp.getString("language") == null) {
-      sp.setString('language', 'English');
-      showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          // return object of type Dialog
-          return AlertDialog(
-            title: Text('You have Internet Connection for first time setup !!'),
-            actions: <Widget>[
-              // usually buttons at the bottom of the dialog
-              FlatButton(
-                child: Text("ok"),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-              )
-            ],
-          );
-        },
-      );
-    }
-  }
-
-  void registeredUser() async {
-    SharedPreferences sp = await SharedPreferences.getInstance();
-
-    if (sp.getString('uname') != null && widget.questions.length > 90) {
-      Navigator.pushReplacementNamed(context, '/dashboard');
-    } else {
-      checkInternetCon();
-    }
   }
 
   String displayMessage = 'Login with';
@@ -159,38 +124,12 @@ class _HomePage extends State<HomePage> {
     return WillPopScope(
       onWillPop: _onWillPop,
       child: Scaffold(
+        backgroundColor: Colors.black,
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Image.asset('assets/banner.png'),
-              Container(
-                width: 180,
-                height: 60,
-                decoration: BoxDecoration(
-                  boxShadow: <BoxShadow>[
-                    BoxShadow(
-                      color: Colors.grey,
-                      offset: Offset(
-                        1.0,
-                        1.0,
-                      ),
-                      blurRadius: 5.0,
-                    ),
-                  ],
-                ),
-                margin: EdgeInsets.all(10),
-                child: RaisedButton(
-                  color: Color(0xFFEF5350),
-                  onPressed: () {
-                    signInWithGoogle();
-                  },
-                  child: Text(
-                    "Google",
-                    style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
-                  ),
-                ),
-              ),
               Container(
                 width: 180,
                 height: 60,
@@ -208,9 +147,11 @@ class _HomePage extends State<HomePage> {
                   color: Color(0xFF536DF0),
                   onPressed: () {
                     registeredUser();
+                    Navigator.pushReplacementNamed(context, '/dashboard');
+                    print('dash==-----------------');
                   },
                   child: Text(
-                    "Guest",
+                    "Dashboard",
                     style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
                   ),
                 ),

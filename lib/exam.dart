@@ -5,6 +5,7 @@ import 'dart:math';
 import './staticData/Data.dart';
 import './dataTypes/CurrentExamQuestion.dart';
 import 'dart:async';
+import 'package:shared_preferences/shared_preferences.dart';
 
 enum TabsDemoStyle { iconsAndText, iconsOnly, textOnly }
 
@@ -348,21 +349,21 @@ class _Exam extends State<Exam> with SingleTickerProviderStateMixin {
     );
   }
 
-  void start() {
+  void start() async{
     var rng = new Random();
     var q = new List();
     int x;
-    Data d = new Data();
-
+    
+    
     print("LANGUAGE = ${widget.language}");
     print("Question Length ${widget.questions.length}");
     _selectedRandomQuestions.clear();
     var counter = 0;
-    for (var i = 1; i <= 20; i++) {
+    for (var i = 1; i <= 5; i++) {
       x = rng.nextInt(widget.questions.length - 1);
       if (!q.contains(x) &&
           x != null &&
-          widget.questions[x].getLanguage() == widget.language) {
+          widget.questions[x].getLanguage() == widget.language ) {
         q.add(x);
 
         _selectedRandomQuestions.add(CurrentExamQuestion(

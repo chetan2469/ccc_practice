@@ -13,7 +13,7 @@ class Dashboard extends StatefulWidget {
   final Function fetchData;
   final Function clearQuestionList;
   Dashboard(this.questions, this.sendToFirebase, this.getDataFromFirebase,
-      this.fetchData,this.clearQuestionList);
+      this.fetchData, this.clearQuestionList);
 
   @override
   State<StatefulWidget> createState() {
@@ -22,11 +22,14 @@ class Dashboard extends StatefulWidget {
 }
 
 class _Dashboard extends State<Dashboard> {
+  SharedPreferences sp;
   @override
   initState() {
     super.initState();
     checkLanuageIsSet();
   }
+
+  
 
   Future<bool> _onWillPop() {
     return showDialog(
@@ -99,6 +102,7 @@ class _Dashboard extends State<Dashboard> {
                 value: 1,
                 child: GestureDetector(
                   onTap: () {
+                    Navigator.pop(context);
                     Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -112,13 +116,18 @@ class _Dashboard extends State<Dashboard> {
                 child: GestureDetector(
                   onTap: () {
                     print("setting");
+                    Navigator.pop(context);
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) => Setting(
-                                widget.sendToFirebase, widget.fetchData,widget.clearQuestionList)));
+                                widget.sendToFirebase,
+                                widget.fetchData,
+                                widget.clearQuestionList)));
                   },
-                  child: Text("Setting"),
+                  child: Container(
+                    child: Text("Setting"),
+                  ),
                 ),
               ),
             ],

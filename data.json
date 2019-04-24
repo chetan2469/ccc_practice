@@ -3327,7 +3327,260 @@
 "op3" : "insert sheet",
 "op4" : "insert file",
 "question" : "एम एस वर्ड सोबत एक्सेल शीट कशी कनेक्ट करतात"
+},
+{
+"ans" : "S-HTTP",
+"language" : "Marathi",
+"op1" : "S-HTTP",
+"op2" : "TCP",
+"op3" : "TCP/IP",
+"op4" : "SSB",
+"question" : "security साठी प्रयोग योग केला जाणारा प्रोटोकॉल"
+},
+{
+"ans" : "class D",
+"language" : "Marathi",
+"op1" : "class A",
+"op2" : "class B",
+"op3" : "class C",
+"op4" : "class D",
+"question" : "IP address मध्ये मल्टिटास्किंग साठी उपयोग केला जाणारा क्लास"
+},
+{
+"ans" : "ICMP",
+"language" : "Marathi",
+"op1" : "UDP",
+"op2" : "ICMP",
+"op3" : "ARP",
+"op4" : "TCP",
+"question" : "खालीलपैकी कोणता एक एक त्रुटी रिपोर्टिंग प्रोटोकॉल आहे"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "एम एस वर्ड मध्ये सिलेक्ट केलेला भाग प्रिंट केला जाऊ शकतो"
+},
+{
+"ans" : "ऑनलाइन नोकरी शोधणे",
+"language" : "Marathi",
+"op1" : "महागडे अभूषण आणि प्राचीन वस्तूची विक्री खरेदी",
+"op2" : "मोबाईल फोनची विक्री खरेदी",
+"op3" : "ब्रॅण्डेड कपड्यांची विक्री खरेदी",
+"op4" : "ऑनलाइन नोकरी शोधणे",
+"question" : "E-Commerce साठी उपयुक्त नाही आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "एका वेळेस आपण फक्त एकच वर्कबुक ओपन करू शकतो"
+},
+{
+"ans" : "काही सीमा नाही",
+"language" : "Marathi",
+"op1" : "एक करोड",
+"op2" : "शंभर करोड",
+"op3" : "काही सीमा नाही",
+"op4" : "यातील काही नाही",
+"question" : "\nचेक किती राशीचा असतो"
+},
+{
+"ans" : "interpret HTML",
+"language" : "Marathi",
+"op1" : "compile html",
+"op2" : "interpret HTML",
+"op3" : "decompile HTML",
+"op4" : "interpret CGI program",
+"question" : "एका ब्राऊजर मुख्य कार्य आहेत"
+},
+{
+"ans" : "scripting language",
+"language" : "Marathi",
+"op1" : "programming language",
+"op2" : "scripting language",
+"op3" : "web browser",
+"op4" : "network protocol",
+"question" : "html एक......"
+},
+{
+"ans" : "true",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "URL नेहमी वेब पेजला दर्शवतो"
+},
+{
+"ans" : "false.",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false.",
+"op3" : ".",
+"op4" : ".",
+"question" : "MS PowerPoint मध्ये ctrl+d स्लाईड डिलीट करायची शॉर्टकट की आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "Windows 98 एक non GUI ऑपरेटिंग सिस्टीम आहे"
+},
+{
+"ans" : "fibre optic",
+"language" : "Marathi",
+"op1" : "coaxial cable",
+"op2" : "untwisted cable",
+"op3" : "telephone line",
+"op4" : "fibre optic",
+"question" : "कशाच्या साह्याने जलद गतीने  डेटा पाठवला जाऊ शकतो"
+},
+{
+"ans" : "modem",
+"language" : "Marathi",
+"op1" : "coaxial cable",
+"op2" : "telephone lines",
+"op3" : "modem",
+"op4" : "microwave system",
+"question" : "खालीलपैकी कोणता एक संचार माध्यम नाही आहे"
+},
+{
+"ans" : "firewall",
+"language" : "Marathi",
+"op1" : "antivirus",
+"op2" : "firewall",
+"op3" : "digital signature",
+"op4" : "वरील सर्व",
+"question" : "पर्सनल नेटवर्क बाहेरील अटॅक पासून वाचवण्याचे तंत्र"
+},
+{
+"ans" : "256",
+"language" : "Marathi",
+"op1" : "128",
+"op2" : "255",
+"op3" : "256",
+"op4" : "260",
+"question" : "EBCDIC मध्ये जास्तीत जास्त किती कॅरेक्टर असू शकतात"
+},
+{
+"ans" : "वरीलपैकी काहीही नाही ",
+"language" : "Marathi",
+"op1" : "Mesh",
+"op2" : "star",
+"op3" : "Bus",
+"op4" : "वरीलपैकी काहीही नाही ",
+"question" : "पुढीलपैकी सर्वात मोठे नेटवर्क कोणते आहेत"
+},
+{
+"ans" : "विज्ञान",
+"language" : "Marathi",
+"op1" : "व्यवसाय क्षेत्र",
+"op2" : "विज्ञान",
+"op3" : "कम्युनिकेशन",
+"op4" : "यापैकी काहीच नाही",
+"question" : "कम्प्युटर भाषा FORTRAN कोणत्या क्षेत्रात उपयोगी आहे"
+},
+{
+"ans" : "spam",
+"language" : "Marathi",
+"op1" : "स्पूलिंग",
+"op2" : "spam",
+"op3" : "वायरल मेसेज",
+"op4" : "वरील सर्व",
+"question" : "नको असलेल्या ईमेल साठी एक ठराविक शब्द आहे"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "shift+Enter शॉर्टकट की ने सेलच्या खाली किंवा पुढे जाऊ शकतो"
+},
+{
+"ans" : "gateway",
+"language" : "Marathi",
+"op1" : "bridge",
+"op2" : "repeater",
+"op3" : "router",
+"op4" : "gateway",
+"question" : "यातील को OSI मॉडेल च्या सर्वात जास्त लेझरचा उपयोग करतो"
+},
+{
+"ans" : "surfing",
+"language" : "Marathi",
+"op1" : "accessing",
+"op2" : "browsing",
+"op3" : "surfing",
+"op4" : "वरीलपैकी काहीही नाही",
+"question" : "एक वेबसाइटवरून दुसऱ्या वेबसाईटवर जाण्याला काय म्हणतात"
+},
+{
+"ans" : "0.1",
+"language" : "Marathi",
+"op1" : "0.1",
+"op2" : "0. 12",
+"op3" : "0.5",
+"op4" : "1.0",
+"question" : "एम एस वर्ड मध्ये कमीत कमी झूम आहे"
+},
+{
+"ans" : "सेल ला उजवीकडून वाढवू शकतो",
+"language" : "Marathi",
+"op1" : "सेल ला सिलेक्ट करू शकतो",
+"op2" : "सेल ला उजवीकडून वाढवू शकतो",
+"op3" : "सेल ला डावीकडून वाढवू शकतो",
+"op4" : "वरीलपैकी काहीही नाही",
+"question" : "एक्सेल मध्ये ####आल्यावर सेलमध्ये काय करू शकतो"
+},
+{
+"ans" : "distributed made system protocol",
+"language" : "Marathi",
+"op1" : "distributed made system protocol",
+"op2" : "distributed message system protocol",
+"op3" : "distributed message system pool",
+"op4" : "distributed mail system pool",
+"question" : "DMSP चा फुल फॉर्म आहे"
+},
+{
+"ans" : "MAC address",
+"language" : "Marathi",
+"op1" : "IP address",
+"op2" : "MAC address",
+"op3" : "host name",
+"op4" : "वरील सर्व",
+"question" : "नेटवर्क इंटरफेस कार्ड(NIC) मध्ये फिजिकल ॲड्रेस स्वरूपात असतो"
+},
+{
+"ans" : "only private",
+"language" : "Marathi",
+"op1" : "public",
+"op2" : "private and public",
+"op3" : "only private",
+"op4" : "only public",
+"question" : "ई-मेल कोणत्या प्रकारचा असू शकतो"
+},
+{
+"ans" : "false",
+"language" : "Marathi",
+"op1" : "true",
+"op2" : "false",
+"op3" : ".",
+"op4" : ".",
+"question" : "ईथरनेट LAN संरचना नाही आहे"
 }
+       
     
   
   

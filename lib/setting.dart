@@ -19,6 +19,7 @@ class Setting extends StatefulWidget {
 class _Setting extends State<Setting> {
   Data d = new Data();
   SharedPreferences sp;
+  bool processing = false;
 
   static const menuItems = <String>[
     'English',
@@ -110,6 +111,7 @@ class _Setting extends State<Setting> {
         padding: const EdgeInsets.all(12.0),
         child: ListView(
           children: <Widget>[
+            processing ? LinearProgressIndicator() : SizedBox(),
             ListTile(
               title: Text('Default Language'),
               trailing: DropdownButton(
@@ -130,25 +132,17 @@ class _Setting extends State<Setting> {
                 margin: EdgeInsets.only(right: 50),
                 child: GestureDetector(
                   onTap: () async {
+                    setState(() {
+                      processing = true;
+                    });
                     final dbHelper = DatabaseHelper.instance;
                     dbHelper.deleteAll();
-                    widget.fetchData();
+                    await widget.fetchData();
+                    setState(() {
+                      processing = false;
+                    });
                   },
                   child: Icon(Icons.restore),
-                ),
-              ),
-            ),
-            ListTile(
-              title: Text('Remove All Questions'),
-              trailing: Container(
-                margin: EdgeInsets.only(right: 50),
-                child: GestureDetector(
-                  onTap: () async {
-                    final dbHelper = DatabaseHelper.instance;
-                    dbHelper.deleteAll();
-                    widget.clearQuestionList();
-                  },
-                  child: Icon(Icons.delete),
                 ),
               ),
             ),

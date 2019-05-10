@@ -359,7 +359,7 @@ class _Exam extends State<Exam> with SingleTickerProviderStateMixin {
     print("Question Length ${widget.questions.length}");
     _selectedRandomQuestions.clear();
     var counter = 0;
-    for (var i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 25; i++) {
       x = rng.nextInt(widget.questions.length - 1);
       if (!q.contains(x) &&
           x != null &&

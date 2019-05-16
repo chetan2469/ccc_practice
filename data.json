@@ -3579,5 +3579,1403 @@
 "op3" : ".",
 "op4" : ".",
 "question" : "ईथरनेट LAN संरचना नाही आहे"
+},
+
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "telnet मध्ये फाईल ट्रान्सफर केली जाऊ शकते"
+},
+{
+  "ans" : "public switched telephone Network",
+  "language" : "Marathi",
+  "op1" : "public switched telephone Network",
+  "op2" : "public service teli network",
+  "op3" : "process switched telephone Network",
+  "op4" : "private switched telephone Network",
+  "question" : "PSTN चा फुल फॉर्म आहे"
+},
+{
+  "ans" : "दुर्घटना बिमा",
+  "language" : "Marathi",
+  "op1" : "जीवन बिमा",
+  "op2" : "दुर्घटना बिमा",
+  "op3" : "सामान्य विमा",
+  "op4" : "वरील सर्व",
+  "question" : "प्रधानमंत्री सुरक्षा विमा योजना (PMSBY) संबंधित आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस पावर पॉईंट मध्ये  हायपर लिंक च्या द्वारे एका वेब पेज वर जाऊ शकतो"
+},
+{
+  "ans" : "मल्टिप्लेक्स स",
+  "language" : "Marathi",
+  "op1" : "मल्टिप्लेक्स स",
+  "op2" : "डी मल्टिप्लेक्स",
+  "op3" : "सिंपलेक्स",
+  "op4" : "फुल डुप्लेक्स",
+  "question" : "........  बऱ्याच सिग्नलला एका सिग्नल मध्ये बदलतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "राउटर नेटवर्कमध्ये ट्रॅफिक कंट्रोल करण्याचे कार्य करतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "दोन व्यक्तींना जर आपापसात चॅट करायचा असेल तर  त्यांना ऑनलाइन राहणे आवश्यक आहे"
+},
+{
+  "ans" : "इनबॉक्स",
+  "language" : "Marathi",
+  "op1" : "आउट बॉक्स",
+  "op2" : "सेंड बॉक्स",
+  "op3" : "इनबॉक्स",
+  "op4" : "ड्राफ्ट",
+  "question" : "आलेला मेल तुम्हाला कुठे मिळेल"
+},
+{
+  "ans" : "S-HTTP",
+  "language" : "Marathi",
+  "op1" : "S-HTTP",
+  "op2" : "TCP",
+  "op3" : "TCP/IP",
+  "op4" : "SSB",
+  "question" : "security साठी प्रयोग योग केला जाणारा प्रोटोकॉल"
+},
+{
+  "ans" : "class D",
+  "language" : "Marathi",
+  "op1" : "class A",
+  "op2" : "class B",
+  "op3" : "class C",
+  "op4" : "class D",
+  "question" : "IP address मध्ये मल्टिटास्किंग साठी उपयोग केला जाणारा क्लास"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Microsoft Internet explorer एक ISP चे नाव आहे"
+},
+{
+  "ans" : "a & b",
+  "language" : "Marathi",
+  "op1" : "parallel port",
+  "op2" : "USB port",
+  "op3" : "PS/2 port",
+  "op4" : "a & b",
+  "question" : "printer  कशाच्या साह्याने कॉम्प्युटर सिस्टिम शी जोडलेला असतो"
+},
+{
+  "ans" : "ICMP",
+  "language" : "Marathi",
+  "op1" : "UDP",
+  "op2" : "ICMP",
+  "op3" : "ARP",
+  "op4" : "TCP",
+  "question" : "खालीलपैकी कोणता एक एक त्रुटी रिपोर्टिंग प्रोटोकॉल आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एक्सेल मध्ये int () आणि trunc () काही प्रमाण नात समान कार्य करतात"
+},
+{
+  "ans" : "सिलिकॉन ने",
+  "language" : "Marathi",
+  "op1" : "क्रोमियम ने",
+  "op2" : "सिलिकॉन ने",
+  "op3" : "सिल्वर ने",
+  "op4" : "आयरन ऑक्साइड ने",
+  "question" : "कम्प्यूटर मध्ये प्रयुक्त आयसी चीप बनतात"
+},
+{
+  "ans" : ".uk",
+  "language" : "Marathi",
+  "op1" : ".uks",
+  "op2" : ".uk",
+  "op3" : ". london",
+  "op4" : "वरीलपैकी कोणीही नाही",
+  "question" : "United kingdom ऑफिशियल डोमेन आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "पावर पॉईंट मध्ये  टेक्स्ट ऑडिओ व्हिडिओ जोडला जाऊ शकतो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true ",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "सामान्यतः कोणत्या हि पेज चे ओरिएंटेशन लैडस्कॅपे असते"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "जेव्हा कम्प्युटर ला ऑन केला जाते तेव्हा  डेटा सेकंडरी मेमरी मध्ये होतो"
+},
+{
+  "ans" : "Windows 5",
+  "language" : "Marathi",
+  "op1" : "Windows 5",
+  "op2" : "Windows 98",
+  "op3" : "Windows NT",
+  "op4" : "Windows 2000",
+  "question" : "यापैकी कोणता विंडोज ऑपरेटिंग सिस्टिम नाही"
+},
+{
+  "ans" : " ऑप्टिकल फायबर",
+  "language" : "Marathi",
+  "op1" : "ट्विस्तेड पैर",
+  "op2" : "कॅट 6",
+  "op3" : " ऑप्टिकल फायबर",
+  "op4" : "ब्रॉडबँड",
+  "question" : "खालीलपैकी वेगाने डेटा पाठवणारी केबल कोणती"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "LCD monitor पेक्षा CRT MONITOR जास्त ऊर्जा वापरतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "ई-मेल च्या बॉडी मध्ये काहीही न लिहिता ई-मेल पाठवला जाऊ शकतो"
+},
+{
+  "ans" : "*",
+  "language" : "Marathi",
+  "op1" : "X",
+  "op2" : "&",
+  "op3" : "*",
+  "op4" : "×",
+  "question" : "कॉम्प्युटर मध्ये गुणाकार करण्या साठी कष्याचा उपयोग केला जातो"
+},
+{
+  "ans" : "professional",
+  "language" : "Marathi",
+  "op1" : "professional",
+  "op2" : "business",
+  "op3" : "developer",
+  "op4" : "extended",
+  "question" : "खालीलपैकी कोणता windows xp  संस्करण आहे"
+},
+{
+  "ans" : "gateway",
+  "language" : "Marathi",
+  "op1" : "hub",
+  "op2" : "switch",
+  "op3" : "gateway",
+  "op4" : "router",
+  "question" : "कोणता नेटवर्क डिवाइस bridge प्रमाणे कार्य करते आणि वेगवेगळे प्रोटोकॉल पण संभाळते"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस वर्ड मध्ये सिलेक्ट केलेला भाग प्रिंट केला जाऊ शकतो"
+},
+{
+  "ans" : "title bar",
+  "language" : "Marathi",
+  "op1" : "taskbar",
+  "op2" : "status bar",
+  "op3" : "title bar",
+  "op4" : "top bar",
+  "question" : "मिनीमाइज मॅक्सीमायझ आणि क्लोज बटन कशावर असतात"
+},
+{
+  "ans" : "कोलम भाग समान राहणे",
+  "language" : "Marathi",
+  "op1" : "कोलम भाग समान राहणे",
+  "op2" : "रो भाग आग समान राहतील",
+  "op3" : "कोलम आणि रो दोन्ही समान राहतील",
+  "op4" : "दोन्ही बदलती",
+  "question" : "जर आपण होत असेल मध्ये फॉर्मुला =$B38 copy करतो तर तो परिणाम असेल"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : "..",
+  "op4" : ".",
+  "question" : "IP डेटा ग्रम ग्राम च्या पूर्ण लांबी मध्ये हीडर व डेटा 2नी सामील असतात"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "इथरनेट स्टेटमेंट रिपीटर द्वारे जोडलेले असतात"
+},
+{
+  "ans" : "ऑनलाइन नोकरी शोधणे",
+  "language" : "Marathi",
+  "op1" : "महागडे अभूषण आणि प्राचीन वस्तूची विक्री खरेदी",
+  "op2" : "मोबाईल फोनची विक्री खरेदी",
+  "op3" : "ब्रॅण्डेड कपड्यांची विक्री खरेदी",
+  "op4" : "ऑनलाइन नोकरी शोधणे",
+  "question" : "E-Commerce साठी उपयुक्त नाही आहे"
+},
+{
+  "ans" : "router",
+  "language" : "Marathi",
+  "op1" : "router",
+  "op2" : "repeater",
+  "op3" : "hub",
+  "op4" : "bridge",
+  "question" : "जर नेटवर्कमध्ये ट्रान्समिशन चा स्पीड वाढवण्या साठी खालीलपैकी कशाचा उपयोग होईल"
+},
+{
+  "ans" : "2 डिसेंबर",
+  "language" : "Marathi",
+  "op1" : "15 डिसेंबर",
+  "op2" : "18 डिसेंबर",
+  "op3" : "2 डिसेंबर",
+  "op4" : "25 डिसेंबर",
+  "question" : "कम्प्युटर साक्षरता दिवस केव्हा असतो"
+},
+{
+  "ans" : "gateway",
+  "language" : "Marathi",
+  "op1" : "gateway",
+  "op2" : "TCP/IP",
+  "op3" : "port",
+  "op4" : "modem",
+  "question" : "एक इंटरनेट दुसऱ्या इंटरनेटचे कनेक्ट होतो"
+},
+{
+  "ans" : "इन्स्टंट मेसेजिंग",
+  "language" : "Marathi",
+  "op1" : "इन्स्टंट मेसेजिंग",
+  "op2" : "ई-मेल",
+  "op3" : "एस एम एस",
+  "op4" : "फेसबूक बुक",
+  "question" : "दोन्हीकडील उपस्थित मित्रांमध्ये वार्तालाप करण्यासाठी प्रयोग केला जातो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : "..",
+  "op4" : ".",
+  "question" : "Ms DOS मध्ये DEL कमांड चा उपयोग डायरेक्टरी फाईल डिलीट करण्यासाठी केलात"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Ms.word  मध्ये डिफॉल्ट पेज ओरिएटेशन landscap असते"
+},
+{
+  "ans" : "internet information services",
+  "language" : "Marathi",
+  "op1" : "international information services",
+  "op2" : "internet information services",
+  "op3" : "important information services",
+  "op4" : "instant information services",
+  "question" : "IIS चा फुल फॉर्म आहे "
+},
+{
+  "ans" : "spam",
+  "language" : "Marathi",
+  "op1" : "unread email",
+  "op2" : "temporary email",
+  "op3" : "spam",
+  "op4" : "वरील सर्व",
+  "question" : "Unsolicited Email ला काय म्हणतात"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : " सर्वर कम्प्युटरचा आणि आणि युजर कम्प्युटरचा ऑपरेटिंग सिस्टिम समान असली पाहिजे"
+},
+{
+  "ans" : "Linux",
+  "language" : "Marathi",
+  "op1" : "Windows 7",
+  "op2" : "Android 8.0",
+  "op3" : "Windows 10",
+  "op4" : "Linux",
+  "question" : "खालीलपैकी कोणता ऑपरेटिंग सिस्टिम पोर्टेबल आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Ms Excel मध्ये AZ 777 एक सेल नंबर आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एका वेळेस आपण फक्त एकच वर्कबुक ओपन करू शकतो"
+},
+{
+  "ans" : "काही सीमा नाही",
+  "language" : "Marathi",
+  "op1" : "एक करोड",
+  "op2" : "शंभर करोड",
+  "op3" : "काही सीमा नाही",
+  "op4" : "यातील काही नाही",
+  "question" : "\nचेक किती राशीचा असतो"
+},
+{
+  "ans" : "=",
+  "language" : "Marathi",
+  "op1" : "#",
+  "op2" : "*",
+  "op3" : "=",
+  "op4" : "%",
+  "question" : "कोणत्याही फॉर्मुला मध्ये कोणते sign लावल्यावर उत्तर प्राप्त होते"
+},
+{
+  "ans" : "time",
+  "language" : "Marathi",
+  "op1" : "time",
+  "op2" : "tax",
+  "op3" : "transfer",
+  "op4" : "transaction",
+  "question" : "RTGS मध्ये T चा अर्थ आहे"
+},
+{
+  "ans" : "application software",
+  "language" : "Marathi",
+  "op1" : "application software",
+  "op2" : "utility software",
+  "op3" : "system software",
+  "op4" : "internet software",
+  "question" : "इंटरनेट एक्स्प्लोरर कोणत्या प्रकारचे सॉफ्टवेअर आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस वर्ड डॉक्युमेंट ला पॉवर पॉइंट मध्ये लिंक करू शकतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "डेटा ग्राम चे सर्व fragment विभिन्न आयडेंटिफिकेशन व्हॅल्यू ठेवतात"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस वर्ड मध्ये चुकून लिहिलेल्या टेक्स्ट ला कट करून परत आणण्यासाठी ctrl+y  चा उपयोग केला जातो"
+},
+{
+  "ans" : "interpret HTML",
+  "language" : "Marathi",
+  "op1" : "compile html",
+  "op2" : "interpret HTML",
+  "op3" : "decompile HTML",
+  "op4" : "interpret CGI program",
+  "question" : "एका ब्राऊजर मुख्य कार्य आहेत"
+},
+{
+  "ans" : "ROUND",
+  "language" : "Marathi",
+  "op1" : "ROUND",
+  "op2" : "MID",
+  "op3" : "LEN",
+  "op4" : "AVERAGE",
+  "question" : "जवळचा पूर्णांक काढण्यासाठी कोणत्या फंक्शन चा उपयोग केला जातो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "UDP प्रोटोकॉल एक कंनेक्शनलेस प्रोटोकॉल आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "LAN ची जास्त स्पीड 300 Mbps आहे "
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "HTML  च्या जागी  पूर्व भाषेचा प्रयोग करणे सोपे आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस पावर पॉइंट मध्ये डिफॉल्ट पेज ओरिएंटेशन landscape असते"
+},
+{
+  "ans" : "true ",
+  "language" : "Marathi",
+  "op1" : "true ",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "कॅरेक्टर साइज ला पॉईंट मध्ये मापले जात"
+},
+{
+  "ans" : "scripting language",
+  "language" : "Marathi",
+  "op1" : "programming language",
+  "op2" : "scripting language",
+  "op3" : "web browser",
+  "op4" : "network protocol",
+  "question" : "html एक......"
+},
+{
+  "ans" : ".html or htm",
+  "language" : "Marathi",
+  "op1" : ".ehtml",
+  "op2" : ".html or htm",
+  "op3" : ".com",
+  "op4" : ".xml",
+  "question" : "कोणत्या वेब फाईल चा डिफॉल्ट एक्स्टेन्शन असता"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "pageUp pageDn ऐवजी आपण स्क्रोल बटन चा उपयोग करू शकतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "URL नेहमी वेब पेजला दर्शवतो"
+},
+{
+  "ans" : "Cache",
+  "language" : "Marathi",
+  "op1" : "RAM",
+  "op2" : "ROM",
+  "op3" : "Cache",
+  "op4" : "Flash",
+  "question" : "खालीलपैकी कशाची स्पीड सर्वात जास्त आहे"
+},
+{
+  "ans" : "false.",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false.",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "MS PowerPoint मध्ये ctrl+d स्लाईड डिलीट करायची शॉर्टकट की आहे"
+},
+{
+  "ans" : "केवळ एक इनपुट डिवाइस",
+  "language" : "Marathi",
+  "op1" : "केवळ एक इनपुट डिवाइस",
+  "op2" : "केवळ एक आउटपुट डिवाइस",
+  "op3" : "इनपुट व आउटपुट डिवाइस",
+  "op4" : "लोकॅटींग डिवाइस",
+  "question" : "GUI वर आधारित ऑपरेटिंग सिस्टीम मध्ये माऊस आहे?"
+},
+{
+  "ans" : "LAN",
+  "language" : "Marathi",
+  "op1" : "LAN",
+  "op2" : "MAN",
+  "op3" : "WAN",
+  "op4" : "PAN",
+  "question" : "खालीलपैकी ईथरनेट कशाचे उदाहरण आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "and..@gmail.com एक बरोबर ईमेल आयडी आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "taskbar  स्क्रीनवर एका जागेवरून दुसऱ्या जागेवर ठेवले जाऊ शकते"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Windows 98 एक non GUI ऑपरेटिंग सिस्टीम आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "MS dos मध्ये cls कमांड चा उपयोग स्क्रीन क्लिअर करण्यासाठी केला जातो"
+},
+{
+  "ans" : "26 जानेवारी 2015",
+  "language" : "Marathi",
+  "op1" : "15 ऑगस्ट 2014",
+  "op2" : "15 ऑगस्ट 2015",
+  "op3" : "26 जानेवारी 2014",
+  "op4" : "26 जानेवारी 2015",
+  "question" : "PMJDY च्या अंतर्गत 30000 चा मोफत विमा मिळवण्याची अंतिम तिथि"
+},
+{
+  "ans" : "स्विस पोस्ट",
+  "language" : "Marathi",
+  "op1" : "स्विस पोस्ट",
+  "op2" : "नेट ग्राम",
+  "op3" : "GMX",
+  "op4" : "AOL",
+  "question" : "यातील कोण एक ई-मेल सर्व्हिस प्रदाता नाही  "
+},
+{
+  "ans" : "६५५३६",
+  "language" : "Marathi",
+  "op1" : "६५५३५",
+  "op2" : "६५५३६",
+  "op3" : "६५५३७",
+  "op4" : "६५५३८",
+  "question" : "वर्कशीट मध्ये रो ची संख्या आहे"
+},
+{
+  "ans" : "वित्त मंत्रालय",
+  "language" : "Marathi",
+  "op1" : "वित्त मंत्रालय",
+  "op2" : "रिझर्व बँक ऑफ इंडिया",
+  "op3" : "वित्त सचिव",
+  "op4" : "वित्तमंत्री",
+  "question" : "₹1 नोट कोण छापतो"
+},
+{
+  "ans" : "A & B",
+  "language" : "Marathi",
+  "op1" : "2नी वेगवेळया ड्राईव्ह मध्ये असल्यास",
+  "op2" : "2नी च एक्स्टेन्शन समान नसावे",
+  "op3" : "नाही बनवू शकत",
+  "op4" : "A & B",
+  "question" : "2 एकाच नावाच्या फाईल बनवू शकतो"
+},
+{
+  "ans" : "fibre optic",
+  "language" : "Marathi",
+  "op1" : "coaxial cable",
+  "op2" : "untwisted cable",
+  "op3" : "telephone line",
+  "op4" : "fibre optic",
+  "question" : "कशाच्या साह्याने जलद गतीने  डेटा पाठवला जाऊ शकतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "ISDN सर्किट स्विचींग च उदाहरण आहे"
+},
+{
+  "ans" : "दोन्ही",
+  "language" : "Marathi",
+  "op1" : "portrait",
+  "op2" : "landscape",
+  "op3" : "दोन्ही",
+  "op4" : "वरीलपैकी कोणीही नाही",
+  "question" : "printing हेतूसाठी उचित पेपर ओरिएंटेशन आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "फुल डुप्लेक्स मध्ये संचार एका दिशेने होतो"
+},
+{
+  "ans" : "edit",
+  "language" : "Marathi",
+  "op1" : "file",
+  "op2" : "edit",
+  "op3" : "view",
+  "op4" : "reference",
+  "question" : "replace command कोणत्या मेन्यूमध्ये असते"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "जर एका कम्प्युटर ला एकापेक्षा अधिक प्रिंटर जोडले ले असतील तर प्रिंट करताना  प्रिंटर चे नाव येत नाही"
+},
+{
+  "ans" : "true ",
+  "language" : "Marathi",
+  "op1" : "true ",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "टीसीपी आयपी प्रोटॉकल डेटा पाठवण्याच्या आधी पहिले छोटे छोटे पॅकेटमध्ये तोडतो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "नेटवर्क स् ला जोडण्यासाठी NIC कार्डचा प्रयोग होतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "SSO च पूर्ण रूप single sign on आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस एक्सेल मध्ये if () फंक्शन चा प्रयोग नंबर वर केला जाऊ शकतो  टेक्स्ट वर नाही"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "host name ला IP address ने  मॅप करण्याच्या प्रक्रियेला address resolution म्हणतात"
+},
+{
+  "ans" : "दोन्हीपैकी काहीही",
+  "language" : "Marathi",
+  "op1" : "primary",
+  "op2" : "secondary",
+  "op3" : "दोन्ही",
+  "op4" : "दोन्हीपैकी काहीही",
+  "question" : "BIOS कशा प्रकारचा स्टोरेज डिवाइस आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "पावर पॉइंट 2003 मध्ये जास्तीत जास्त  झूम 300% करू शकतो"
+},
+{
+  "ans" : "modem",
+  "language" : "Marathi",
+  "op1" : "coaxial cable",
+  "op2" : "telephone lines",
+  "op3" : "modem",
+  "op4" : "microwave system",
+  "question" : "खालीलपैकी कोणता एक संचार माध्यम नाही आहे"
+},
+{
+  "ans" : "formula error",
+  "language" : "Marathi",
+  "op1" : "formula error",
+  "op2" : "reference error",
+  "op3" : "value error",
+  "op4" : "वरील सर्व",
+  "question" : "एक्सेल मध्ये #Name? error चा अर्थ आहे"
+},
+{
+  "ans" : "काहीच नाही",
+  "language" : "Marathi",
+  "op1" : "alphabet",
+  "op2" : "number",
+  "op3" : "document",
+  "op4" : "काहीच नाही",
+  "question" : "पेज हेडर मध्ये डिफॉल्ट रूपात काय लिहिलेले असते"
+},
+{
+  "ans" : "22 character",
+  "language" : "Marathi",
+  "op1" : "12 character",
+  "op2" : "18 character",
+  "op3" : "22 character",
+  "op4" : "24 character",
+  "question" : "DIR TAG  च्या जवळ केवळ.......  असू शकतात"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "E आणि S चा फुल फॉर्म आहे- Either or Survivor"
+},
+{
+  "ans" : "64",
+  "language" : "Marathi",
+  "op1" : "55",
+  "op2" : "64",
+  "op3" : "255",
+  "op4" : "260",
+  "question" : "ईमेल आयडी मध्ये युजरनेम साठी किती अक्षर वापरले जाऊ शकतात"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "SMTP चा फुल फॉर्म आहे simple mail transfer protocol"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "दोन व्यक्ती जर एकमेकांसोबत chat करू इच्छितात तर त्यांना ऑनलाइन असणे आवश्यक आहे"
+},
+{
+  "ans" : "IMAP",
+  "language" : "Marathi",
+  "op1" : "HTTP",
+  "op2" : "SMTP",
+  "op3" : "IMAP",
+  "op4" : "POP3",
+  "question" : "पोर्ट नंबर 143 कशाच्या द्वारे प्रयोग केला जातो"
+},
+{
+  "ans" : "program",
+  "language" : "Marathi",
+  "op1" : "virus",
+  "op2" : "anti-virus",
+  "op3" : "program",
+  "op4" : "वरील सर्व",
+  "question" : "spider काय आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "shift+delete ला एक साथ प्रेस करणे म्हणजे डेटा ला परमनंट डिलीट करणे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "ARPANET network ला NFSnet आणि दुसऱ्या प्रायव्हेट नेटवर्क मिळवून इंटरनेट मध्ये बदलले "
+},
+{
+  "ans" : "Netscape",
+  "language" : "Marathi",
+  "op1" : "www",
+  "op2" : "Netscape",
+  "op3" : "yahoo",
+  "op4" : "bing",
+  "question" : "खालीलपैकी कोणता ब्राऊजरचा प्रकार आहे"
+},
+{
+  "ans" : "firewall",
+  "language" : "Marathi",
+  "op1" : "antivirus",
+  "op2" : "firewall",
+  "op3" : "digital signature",
+  "op4" : "वरील सर्व",
+  "question" : "पर्सनल नेटवर्क बाहेरील अटॅक पासून वाचवण्याचे तंत्र"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "shift + delete एक साथ press करणे म्हणजे डेटा ला परमनंट डिलीट करणे"
+},
+{
+  "ans" : "256",
+  "language" : "Marathi",
+  "op1" : "128",
+  "op2" : "255",
+  "op3" : "256",
+  "op4" : "260",
+  "question" : "EBCDIC मध्ये जास्तीत जास्त किती कॅरेक्टर असू शकतात"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "printer header ला मार्जिन एरियामध्ये प्रिंट करतो"
+},
+{
+  "ans" : "वरीलपैकी काहीही नाही ",
+  "language" : "Marathi",
+  "op1" : "Mesh",
+  "op2" : "star",
+  "op3" : "Bus",
+  "op4" : "वरीलपैकी काहीही नाही ",
+  "question" : "पुढीलपैकी सर्वात मोठे नेटवर्क कोणते आहेत"
+},
+{
+  "ans" : "विज्ञान",
+  "language" : "Marathi",
+  "op1" : "व्यवसाय क्षेत्र",
+  "op2" : "विज्ञान",
+  "op3" : "कम्युनिकेशन",
+  "op4" : "यापैकी काहीच नाही",
+  "question" : "कम्प्युटर भाषा FORTRAN कोणत्या क्षेत्रात उपयोगी आहे"
+},
+{
+  "ans" : "reference",
+  "language" : "Marathi",
+  "op1" : "file",
+  "op2" : "edit",
+  "op3" : "reference",
+  "op4" : "insert",
+  "question" : "footnote  कोणत्या मेन्यू मध्ये असतात"
+},
+{
+  "ans" : "spam",
+  "language" : "Marathi",
+  "op1" : "स्पूलिंग",
+  "op2" : "spam",
+  "op3" : "वायरल मेसेज",
+  "op4" : "वरील सर्व",
+  "question" : "नको असलेल्या ईमेल साठी एक ठराविक शब्द आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "shift+Enter शॉर्टकट की ने सेलच्या खाली किंवा पुढे जाऊ शकतो"
+},
+{
+  "ans" : "चार बाईट्स",
+  "language" : "Marathi",
+  "op1" : "दोन बाईट्स",
+  "op2" : "चार बाईट्स",
+  "op3" : "6 बाईट्स",
+  "op4" : "वरीलपैकी कोणीच नाही",
+  "question" : "वर्तमान मध्ये आय पी ऍड्रेस चा आकार"
+},
+{
+  "ans" : "ctrl+shift+c",
+  "language" : "Marathi",
+  "op1" : "ctrl+c ",
+  "op2" : "ctrl+shift+f",
+  "op3" : "ctrl+shift+c",
+  "op4" : "ctrl+shift+v",
+  "question" : "कोणत्याही कॅरेक्टर फॉर्मेट ला कॉपी करण्यासाठी खालीलपैकी कशाचा उपयोग होईल"
+},
+{
+  "ans" : " नेटवर्क संबंधित कंपनी वा सर्विस प्रोव्हायडर साठी",
+  "language" : "Marathi",
+  "op1" : "ऑर्गनायझेशन साठी",
+  "op2" : " नेटवर्क संबंधित कंपनी वा सर्विस प्रोव्हायडर साठी",
+  "op3" : "एज्युकेशन साठी",
+  "op4" : "ई कॉमर्स साठी",
+  "question" : ".net domain कशासाठी उपयोग केला जातो"
+},
+{
+  "ans" : "DIAL-UP",
+  "language" : "Marathi",
+  "op1" : "SIP",
+  "op2" : "SENSOR",
+  "op3" : "PPE",
+  "op4" : "DIAL-UP",
+  "question" : " जी विधी आपल्याला इंटरनेटचे कनेक्ट करते"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "pageup  व pageDn च्या जागी स्क्रोल बटन वापरू शकतात"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "WAN मध्ये LAN पेक्षा त्रुटी कमी असतात"
+},
+{
+  "ans" : "false ",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false ",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस पावर पॉईंट मध्ये ctrl+d  स्लाईड डिलीट करण्याचे शॉर्टकट की आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "आपण मॉनिटर आणि स्पीकर पासून डेटा प्राप्त करू शकतो का?"
+},
+{
+  "ans" : "page up",
+  "language" : "Marathi",
+  "op1" : "ctrl + pageup",
+  "op2" : "page up",
+  "op3" : "ctrl+ page dn",
+  "op4" : "page dn",
+  "question" : "प्रेविअस पेजवर यायची शॉर्टकट की आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "x.25 एक नेटवर्क आहे एक नेटवर्क आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "बस तोपोलॉजी मध्ये मुख्य केबल खराब झाल्यास नेटवर्क वर्किंग संचालन बंद होते"
+},
+{
+  "ans" : "वरील सर्व",
+  "language" : "Marathi",
+  "op1" : "फक्त अल्फाबेट",
+  "op2" : "फक्त नंबर",
+  "op3" : "नंबर अल्फाबेट दोनी",
+  "op4" : "वरील सर्व",
+  "question" : "खालीलपैकी ई-मेल च्या युजर नेम मध्ये कशाचा उपयोग करू शकतो"
+},
+{
+  "ans" : "gateway",
+  "language" : "Marathi",
+  "op1" : "bridge",
+  "op2" : "repeater",
+  "op3" : "router",
+  "op4" : "gateway",
+  "question" : "यातील को OSI मॉडेल च्या सर्वात जास्त लेझरचा उपयोग करतो"
+},
+{
+  "ans" : "2000",
+  "language" : "Marathi",
+  "op1" : "1000",
+  "op2" : "2000",
+  "op3" : "5000",
+  "op4" : "10000",
+  "question" : "reserve Bank द्वारे जारी केलेला सर्वात मोठा चलनीय नोट "
+},
+{
+  "ans" : "fibre distributed Data Interface",
+  "language" : "Marathi",
+  "op1" : "fibre distributed Data Interface",
+  "op2" : "file distributed Data Interface",
+  "op3" : "file direct Data Interface",
+  "op4" : "fibre direct Data Interface",
+  "question" : "FDDI चा फुल फॉर्म आहे"
+},
+{
+  "ans" : "surfing",
+  "language" : "Marathi",
+  "op1" : "accessing",
+  "op2" : "browsing",
+  "op3" : "surfing",
+  "op4" : "वरीलपैकी काहीही नाही",
+  "question" : "एक वेबसाइटवरून दुसऱ्या वेबसाईटवर जाण्याला काय म्हणतात"
+},
+{
+  "ans" : "मनी लँडिंग खाते पासून बचाव",
+  "language" : "Marathi",
+  "op1" : "चांगले बँक ग्राहक संबंध विकसित करणे",
+  "op2" : "महत्वपूर्ण आर्थिक सूचनांसाठी आकडा आधार डेटाबेस सुजित करणे",
+  "op3" : "मनी लँडिंग खाते पासून बचाव",
+  "op4" : "हे सुनिश्चित करणे की जमा प्राप्त करणाऱ्या बायकांना सेक्शन 131 च्या अंतर्गत संविधानिक सुरक्षा मिळती आहे",
+  "question" : "भारतीय रिझर्व बँक द्वारे सुरू केली गेलेली आपल्या ग्राहकांना ओळखा योजना (KYC) चा मुख्य उद्देश काय आहे"
+},
+{
+  "ans" : "0.1",
+  "language" : "Marathi",
+  "op1" : "0.1",
+  "op2" : "0. 12",
+  "op3" : "0.5",
+  "op4" : "1.0",
+  "question" : "एम एस वर्ड मध्ये कमीत कमी झूम आहे"
+},
+{
+  "ans" : "इंक्रीप्शन करून",
+  "language" : "Marathi",
+  "op1" : "सेव करून",
+  "op2" : "डिलीट करून",
+  "op3" : "इंक्रीप्शन करून",
+  "op4" : "description करून",
+  "question" : "आपण आपले मेसेज सुरक्षित ठेवू शकतो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस वर्ड मध्ये इमेज ला एका ठिकाणी दुसऱ्या ठिकाणी पाणी घेऊन जायचे असल्यास कर्सर 2 अर्रो मध्ये बदलतो"
+},
+{
+  "ans" : "TIFF",
+  "language" : "Marathi",
+  "op1" : "TIFF",
+  "op2" : "Mpa",
+  "op3" : "Wav",
+  "op4" : "wma",
+  "question" : "खालीलपैकी कोणता एक पिक्चर फॉरमॅट आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : "..",
+  "op4" : ".",
+  "question" : "MS word ला युनिक्स ऑपरेटिंग सिस्टिम वर प्रयोग केलं जाऊ शकतं"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "MS PowerPoint मध्ये स्लाईड शो मध्ये मागील स्लाईडवर जाण्यासाठी प्रयोग केला जातो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "firewall इंटरनेट ची स्पीड कंट्रोल करतो"
+},
+{
+  "ans" : "सेल ला उजवीकडून वाढवू शकतो",
+  "language" : "Marathi",
+  "op1" : "सेल ला सिलेक्ट करू शकतो",
+  "op2" : "सेल ला उजवीकडून वाढवू शकतो",
+  "op3" : "सेल ला डावीकडून वाढवू शकतो",
+  "op4" : "वरीलपैकी काहीही नाही",
+  "question" : "एक्सेल मध्ये ####आल्यावर सेलमध्ये काय करू शकतो"
+},
+{
+  "ans" : "gaol seek",
+  "language" : "Marathi",
+  "op1" : "Go-to",
+  "op2" : "replace",
+  "op3" : "gaol seek",
+  "op4" : "find",
+  "question" : "एम एस एक्सेल मध्ये.......... असा नियम आहे जो चे पूर्वानुमान मध्ये मदत करतो"
+},
+{
+  "ans" : "shift+alt+f1",
+  "language" : "Marathi",
+  "op1" : "shift+alt+f1",
+  "op2" : "ctrl+alt+f1",
+  "op3" : "shift+alt+f3",
+  "op4" : "shift+alt+f4",
+  "question" : "नवीन वर्कशीट बनवण्याची शॉर्टकट की आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "आपण मॉनिटर आणि स्पीकर पासून डेटा घेऊ शकतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Internet explorer विंडोज ऑपरेटिंग सिस्टिम एक भाग आहे"
+},
+{
+  "ans" : "distributed made system protocol",
+  "language" : "Marathi",
+  "op1" : "distributed made system protocol",
+  "op2" : "distributed message system protocol",
+  "op3" : "distributed message system pool",
+  "op4" : "distributed mail system pool",
+  "question" : "DMSP चा फुल फॉर्म आहे"
+},
+{
+  "ans" : "MAC address",
+  "language" : "Marathi",
+  "op1" : "IP address",
+  "op2" : "MAC address",
+  "op3" : "host name",
+  "op4" : "वरील सर्व",
+  "question" : "नेटवर्क इंटरफेस कार्ड(NIC) मध्ये फिजिकल ॲड्रेस स्वरूपात असतो"
+},
+{
+  "ans" : "program",
+  "language" : "Marathi",
+  "op1" : "high level language",
+  "op2" : "program",
+  "op3" : "code",
+  "op4" : "यातील कोणी नाही",
+  "question" : "compilers आणि interpreters स्वयम् काय आहेत"
+},
+{
+  "ans" : "fast",
+  "language" : "Marathi",
+  "op1" : "slow",
+  "op2" : "fast",
+  "op3" : "cheap",
+  "op4" : "वरील सर्व",
+  "question" : "प्रायमरी मेमरी सेकंडरी मेमरी पेक्षा ......असते"
+},
+{
+  "ans" : "only private",
+  "language" : "Marathi",
+  "op1" : "public",
+  "op2" : "private and public",
+  "op3" : "only private",
+  "op4" : "only public",
+  "question" : "ई-मेल कोणत्या प्रकारचा असू शकतो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Microsoft Internet explorer एक ISP च नाव आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "जेव्हा आपण  एक कम्प्युटर वरून दुसऱ्या कॉम्प्युटरला एक्सेस करत असतो तेव्हा telnet चा उपयोग करतायेत नाही "
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "RAM ला read and write memory आणि ROM read only memory म्हंटले जाते"
+},
+{
+  "ans" : "digital audio tape",
+  "language" : "Marathi",
+  "op1" : "data audio tape",
+  "op2" : "digital audio tape",
+  "op3" : "data automatic tape",
+  "op4" : "digital automatic tape",
+  "question" : "DAY फुल फॉर्म आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "ईथरनेट LAN संरचना नाही आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "कम्प्युटरला स्वीच ऑफ केल्यास मेन मेमरीचा डेटा डिलीट होतो"
+},
+{
+  "ans" : "compiler",
+  "language" : "Marathi",
+  "op1" : "interpreter",
+  "op2" : "assembler",
+  "op3" : "translator",
+  "op4" : "compiler",
+  "question" : "एक कॉम्प्युटर प्रोग्राम जो सर्व प्रोग्राम निर्देशांना एकाच वेळेस मशीन लेवेल लांग्वेज मध्ये कन्वर्ट करतो"
+},
+{
+  "ans" : "2",
+  "language" : "Marathi",
+  "op1" : "2",
+  "op2" : "3",
+  "op3" : "4",
+  "op4" : "5",
+  "question" : "ई-मेल ऍड्रेस मध्ये किती पार्ट  असतात"
+},
+{
+  "ans" : "DPI",
+  "language" : "Marathi",
+  "op1" : "CPI",
+  "op2" : "CPM",
+  "op3" : "DPI",
+  "op4" : "PPM",
+  "question" : "प्रिंटिंग ची गुणवत्ता मापली जाते"
+},
+{
+  "ans" : "10",
+  "language" : "Marathi",
+  "op1" : "5",
+  "op2" : "10",
+  "op3" : "12",
+  "op4" : "15",
+  "question" : "mesh topology मध्ये पाच कम्प्युटरला एकमेकांना जोडण्यासाठी किती केबल लागतील"
+},
+{
+  "ans" : "unsolicited commercial email",
+  "language" : "Marathi",
+  "op1" : "user client extension",
+  "op2" : "user client email",
+  "op3" : "unsolicited commercial email",
+  "op4" : "वरीलपैकी कोणीही नाही",
+  "question" : "UCE चा फुल फॉर्म आहे"
 }
+    
+  
 ]

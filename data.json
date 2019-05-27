@@ -4975,7 +4975,503 @@
   "op3" : "unsolicited commercial email",
   "op4" : "वरीलपैकी कोणीही नाही",
   "question" : "UCE चा फुल फॉर्म आहे"
+},
+{
+  "ans" : "POP3",
+  "language" : "Marathi",
+  "op1" : "SMTP",
+  "op2" : "POP3",
+  "op3" : "udp",
+  "op4" : "FTP",
+  "question" : "इमेल वर आलेल्या ई-मेल ला प्राप्त करण्यासाठी कशाचा उपयोग होतो"
+},
+{
+  "ans" : "ए आणि बी",
+  "language" : "Marathi",
+  "op1" : "ctrl+}",
+  "op2" : "ctrl+shift+>",
+  "op3" : "ctrl+shift+<",
+  "op4" : "ए आणि बी",
+  "question" : "फॉन्ट साईज वाढवण्याचे शॉर्टकट की आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "ईमेल मध्ये ऑडिओ आणि पिक्चर एक साथ पाठवू शकतो?"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "mobile phone, full duplex उदाहरण आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "keyboard एक गेम कंट्रोलर नाही आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "BIOS फर्मवेअर आहे जो ROM मध्ये स्टोर असतो"
+},
+{
+  "ans" : "loan",
+  "language" : "Marathi",
+  "op1" : "loan",
+  "op2" : "saving",
+  "op3" : "a & b",
+  "op4" : "वरीलपैकी कोणीही नाही",
+  "question" : "बँक कशावर व्याज घेते"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "flase",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "web browser GUI वर आधारित असतो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एक रिकामे फोल्डर मेमरी मध्ये स्थान ग्रहण करू शकते"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "PowerPoint print view मोडमध्ये नोट पेजेस ला पाहण्याची अनुमती नसते"
+},
+{
+  "ans" : "ctrl+;",
+  "language" : "Marathi",
+  "op1" : "ctrl+ D",
+  "op2" : "alt+D",
+  "op3" : "ctrl+ ;",
+  "op4" : "alt+ ;",
+  "question" : " एक्सेल मध्ये डेट टाकण्याची शॉर्टकट की आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Windows explorer नेहमी फाईलचा प्रकार दिसतो"
+},
+{
+  "ans" : "Max()",
+  "language" : "Marathi",
+  "op1" : "maximum()",
+  "op2" : "len()",
+  "op3" : "min()",
+  "op4" : "Max()",
+  "question" : "दिलेल्या रेंज चे उच्चतम माप कसे काढावे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एक ईमेल आयडी मध्ये केवळ एक @ सिम्बॉल असला पाहिजे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "auto fill मध्ये a,b,c,d ला z पर्यंत fill करू शकतो"
+},
+{
+  "ans" : "वर्ल्ड वाईड वेब कन्सोर्तियम",
+  "language" : "Marathi",
+  "op1" : "वर्ल्ड 3 कन्सोर्तियम",
+  "op2" : "वर्ल्ड वाईड वेब  कमिटी",
+  "op3" : "वर्ल्ड वाईड वेब कंपनी",
+  "op4" : "वर्ल्ड वाईड वेब कन्सोर्तियम",
+  "question" : "W3C फुल फॉर्म आहे"
+},
+{
+  "ans" : "ctrl+home",
+  "language" : "Marathi",
+  "op1" : "home",
+  "op2" : "end",
+  "op3" : "shift+home",
+  "op4" : "ctrl+home",
+  "question" : "पहिल्या रो column मध्ये जाण्याची शॉर्टकट की"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "cash मेमरीची गती ram पेक्षा हळु असते"
+},
+{
+  "ans" : "second generation",
+  "language" : "Marathi",
+  "op1" : "first generation",
+  "op2" : "second generation",
+  "op3" : "3rd generation",
+  "op4" : "4th generation",
+  "question" : "IMB 1401 कोणत्या पिढीचा कम्प्युटर आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "फोल्डर नेम मध्ये नऊ पेक्षा जास्त कॅरेक्टर नाही ठेवू शकत"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "volum कंट्रोल बटन notification एरिया मध्ये प्रदर्शित होते"
+},
+{
+  "ans" : "draft",
+  "language" : "Marathi",
+  "op1" : "mailbox",
+  "op2" : "inbox",
+  "op3" : "draft",
+  "op4" : "compose",
+  "question" : "compose केलेले मेसेज कुठे सेव्ह होतात"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "फाईल चे नाव देताना कॅपिटल किंवा स्मॉल लेटर स् चाच वापर करु शकतो, एकाच वेळेस दोन्ही लेटर स् वापरु शकत नाहीत"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "x.25 चा प्रयोग इंटरनेट एक्स्प्लोरर च्या रुपात करतात\n"
+},
+{
+  "ans" : "32768",
+  "language" : "Marathi",
+  "op1" : "8194",
+  "op2" : "42096",
+  "op3" : "1684",
+  "op4" : "32768",
+  "question" : "32 kb मध्ये किती  बाईट असतात"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "format printer फक्त फक्त वर्डपॅड मध्ये उपलब्ध आहे पावर पॉईंट मध्ये नाही"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "VDU इनपुट आणि आऊटपुट दोन्ही साठी प्रयोग केला जातो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : " वाचण्याच्या आधी मेल ला डिलीट करणे शक्य नाही"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "शब्द निवडण्या साठी 2 दा क्लिक करण्याच्या प्रक्रिये चा वापर होतो"
+},
+{
+  "ans" : "post office protocol",
+  "language" : "Marathi",
+  "op1" : "post over protocol",
+  "op2" : "primary office protocol",
+  "op3" : "post office protocol",
+  "op4" : "वरीलपैकी कोणीही नाही",
+  "question" : "ई-मेल सेवा संबंधी pop चा अर्थ आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Ms Outlook  ला mail user agent पण म्हणलं जाते"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "backspace च्या मदतीने कर्सर च्या डाव्या बाजूचा टेक्स्ट delete केला जाऊ शकतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "operating system user आणि हार्डवेअर च्या मध्ये interface बनवतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "absolute URL असतो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "पावर पॉईंट मध्ये केवळ 1kb ची व्हिडिओ इन्सर्ट करू शकतो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "NNTP protocol उपयोग न्यूज एडिटिंग मध्ये केला जातो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "HTML सर्च इंजिन च्या समान आहे"
+},
+{
+  "ans" : "alt+shift",
+  "language" : "Marathi",
+  "op1" : "shift",
+  "op2" : "ctrl",
+  "op3" : "alt+shift",
+  "op4" : "alt",
+  "question" : "मायक्रोसोफ्ट एक्सेल वर्कशीट मधील त्या सेल ला सिलेक्ट करायचे असेल ज्या विविध अंतरावरील सीमांवर आहेत हे तर त्यासाठी कोणती की वापरली जाऊ शकते"
+},
+{
+  "ans" : "business to business",
+  "language" : "Marathi",
+  "op1" : "base to base",
+  "op2" : "base to business",
+  "op3" : "business to business",
+  "op4" : "business to base",
+  "question" : "B2B चा पुर्ण रूप आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "e-governance एक सरकारची पहल आहे"
+},
+{
+  "ans" : "500",
+  "language" : "Marathi",
+  "op1" : "200",
+  "op2" : "256",
+  "op3" : "128",
+  "op4" : "500",
+  "question" : "आपण Gmail वर किती लोकांना मेल पाठवू शकतो"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "एम एस वर्ड मध्ये मिनिमम झूम 8% असते"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "फोल्डर तयार करण्या साठी . आणि ? चा उपयोग केला जातो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "मल्टीमीडिया मध्ये विविध प्रकारचे टेक्स्ट साऊंड व्हिडिओ असतात"
+},
+{
+  "ans" : "throughput",
+  "language" : "Marathi",
+  "op1" : "output",
+  "op2" : "throughput",
+  "op3" : "capacity",
+  "op4" : "efficiency",
+  "question" : "प्रोसेसिंग प्रक्रिये मध्ये लागणाऱ्या प्रती युनिट ला म्हणतात"
+},
+{
+  "ans" : "256",
+  "language" : "Marathi",
+  "op1" : "256",
+  "op2" : "11",
+  "op3" : "128",
+  "op4" : "32",
+  "question" : "कोणत्याही फोल्डरच्या नावामध्ये जास्तीत जास्त किती कॅरॅक्टर असू शकतात"
+},
+{
+  "ans" : " पेज खालीवर होईल",
+  "language" : "Marathi",
+  "op1" : "पेज खालच्या बाजूस जाईल",
+  "op2" : "पेज वरील बाजूस जाईल",
+  "op3" : " पेज खालीवर होईल",
+  "op4" : "वरीलपैकी काहीही नाही",
+  "question" : "आपण माऊसच्या मधील बटनास पुढे मागे केल्यास पेजवर काय करतो"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "टेक्स्ट, graphic, sounds, animation व्हिडिओ च्या  मेल ला मल्टीमीडिया म्हणतात"
+},
+{
+  "ans" : "ctrl+shift+space bar",
+  "language" : "Marathi",
+  "op1" : "ctrl+shift+space bar",
+  "op2" : "alt+space bar",
+  "op3" : "shift+space bar",
+  "op4" : "alt+shift+space bar",
+  "question" : "एक्सेल मध्ये संपूर्ण वर्कशीट सिलेक्ट करण्याची शॉर्टकट की आहे"
+},
+{
+  "ans" : "वरील सर्व",
+  "language" : "Marathi",
+  "op1" : "परिवारातील मुख्य व्यक्ती",
+  "op2" : "फक्त एक स्त्री",
+  "op3" : "10 वर्षा पासून पुढे सर्व",
+  "op4" : "वरील सर्व",
+  "question" : "PMJDY चे अंतर्गत कोण खाते उघडण्या पात्रसाठी आहे"
+},
+{
+  "ans" : "false",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "IMAP , POP3  पेक्षा अधिक तीव्र कार्य करते"
+},
+{
+  "ans" : "65536",
+  "language" : "Marathi",
+  "op1" : "104856",
+  "op2" : "65536",
+  "op3" : "16384",
+  "op4" : "256",
+  "question" : "एम एस एक्सेल 2003 मध्ये किती रो असतात"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "18 वर्षाखालील व्यक्ती बँक मध्ये खाते उघडू शकतो"
+},
+{
+  "ans" : "ctrl + f",
+  "language" : "Marathi",
+  "op1" : "ctrl + f",
+  "op2" : "alt + f",
+  "op3" : "f3",
+  "op4" : "ctrl+shift+f",
+  "question" : "फाईल मध्ये टेक्स्ट आणि सर्च करायची शॉर्टकट की आहे"
+},
+{
+  "ans" : "true",
+  "language" : "Marathi",
+  "op1" : "true",
+  "op2" : "false",
+  "op3" : ".",
+  "op4" : ".",
+  "question" : "Ms Excel मध्ये=power (b5^3) आणि=b5^3 च आनुमान समान असेल"
 }
+  
     
   
 ]
